@@ -1,0 +1,364 @@
+extends layout
+block content
+
+  section.videoGallery
+    include header.pug
+    .container
+      .videoGallery-content
+        .videoGallery-content-mark
+          .videoGallery-content-mark-img
+          .videoGallery-content-mark-txt Episode 12
+        .videoGallery-content-title
+          | Key Programming
+          br
+          | by DUMP
+        .videoGallery-content-text Press &quot;Play&quot; button and type this code into player:
+        .videoGallery-content-input
+          .episodeArrow
+          form(name='episodeForm' action='' method='POST')
+            .grey
+              input(type='image' onclick='copyText()' src='img/copy1.png')
+            input#episodeCode(type='text' pattern='[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}' placeholder='')
+        .videoGallery-content-buttons
+          a.videoGallery-content-button.playB(href='#')
+            img(src='img/Polygon1.png' alt='▹')
+            |  Play
+          a.videoGallery-content-button.resB(href='#')
+            img(src='img/download1.png' alt='⤓')
+            | Resources
+      .videoGallery-slider
+        .videoGallery-slider-item
+          a(href='#')
+            img(src='img/episodeArrow.svg' alt='img')
+            | Previous
+          .episode-iframeBlock
+            img(src='img/yellowMan.png' alt='img')
+        .videoGallery-slider-item
+          a(href='#')
+            | Next
+            img(src='img/episodeArrow.svg' alt='img')
+          .episode-iframeBlock
+            img(src='img/masterclass1.png' alt='img')
+  section
+    .container
+      .episodeDesc
+        .episodeDesc-text
+          .episodeDesc-text-title Key Programming by DUMP
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id orci eros.
+            | In porta odio at tellus sagittis, ut vestibulum nulla eleifend.
+            | Vivamus ut ex ac est tempor porttitor. Mauris placerat ultricies placerat. Vivamus ac accumsan metus.
+            | Quisque a hendrerit tortor, at rhoncus augue. Nullam eleifend nunc quis dictum ornare.
+            | Nam faucibus purus lectus, id lobortis tellus vulputate at. Proin non dolor neque. Praesent vel pharetra nulla.
+            | Aliquam erat volutpat. Praesent tincidunt diam et massa tristique, ac pretium nisi mollis.
+          p
+            | Duis nec massa tellus. Quisque semper nisl est, eget pharetra ex efficitur molestie.
+            | Pellentesque malesuada augue lobortis tortor lacinia mollis.
+            | Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas nulla tellus, tempus sit amet risus nec,
+            | ullamcorper blandit velit. Quisque tellus nulla, convallis eu lacus sit amet, vestibulum mollis tortor.
+            | Nunc est dolor, accumsan a ligula vel, faucibus porta urna. Fusce sed fringilla quam.
+            | Aenean dapibus quis eros a convallis. Nunc non rhoncus ipsum, nec pulvinar nunc.
+            | Vestibulum congue faucibus neque, nec sollicitudin risus facilisis et. Curabitur nisi erat, luctus ac est sed,
+            | fermentum sodales lorem. Praesent non libero nisi. Mauris non tellus magna.
+        .episodeDesc-links
+          .episodeDesc-links-title
+            img(src='img/episodeLink1.svg' alt='pic')
+            a(href='#') Materials from the video
+          .episodeDesc-links-link
+            img(src='img/episodeLink2.svg' alt='pic')
+            a(href='#') Lishi
+          .episodeDesc-links-link
+            img(src='img/episodeLink3.png' alt='pic')
+            a(href='#') Programmer
+          .episodeDesc-links-link
+            img(src='img/episodeLink4.svg' alt='pic')
+            a(href='#') Transponder EPROM
+          .episodeDesc-links-title
+            img(src='img/episodeLink5.svg' alt='pic')
+            a(href='#') Resourses
+          .episodeDesc-links-link
+            span.taskDate 02:20
+            a(href='#') Buy new keys
+          .episodeDesc-links-link
+            span.taskDate 02:20
+            a(href='#') List of all cars
+          .episodeDesc-links-link
+            span.taskDate 02:20
+            a(href='#') New key trands 2020
+          hr
+          .episodeDesc-links-download
+            a(href='#') Download player
+  section
+    .container
+      .episodeList
+        .episodeList-title Episodes
+        .episodeList-content.ep-content
+          .episode-iframeBlock
+            .videosViewed
+              .videosItem-number 01
+              .videosItem-text viewed
+            .hiddenBlock
+              .hiddenBlock-title
+                img.chp(src='img/episodeChip1.svg' alt='chip')
+                .hiddenBlock-title-title Episode 12
+              .hiddenBlock-text Remote programming
+              .hiddenBlock-play
+                img(src='img/episodePlay.svg' alt='▹')
+            img(src='img/yellowMan.png' alt='img')
+          .episode-iframeBlock
+            .videosViewed
+              .videosItem-number 02
+              .videosItem-text viewed
+            .hiddenBlock
+              .hiddenBlock-title
+                img.chp(src='img/episodeChip1.svg' alt='chip')
+                .hiddenBlock-title-title Episode 12
+              .hiddenBlock-text Remote programming
+              .hiddenBlock-play
+                img(src='img/episodePlay.svg' alt='▹')
+            img(src='img/masterclass1.png' alt='img')
+          .episode-iframeBlock
+            .videosViewed
+              .videosItem-number 03
+            .hiddenBlock
+              .hiddenBlock-title
+                img.chp(src='img/episodeChip1.svg' alt='chip')
+                .hiddenBlock-title-title Episode 12
+              .hiddenBlock-text Remote programming
+              .hiddenBlock-play
+                img(src='img/episodePlay.svg' alt='▹')
+            img(src='img/masterclass2.png' alt='img')
+          .episode-iframeBlock
+            .videosViewed
+              .videosItem-number 04
+            .hiddenBlock
+              .hiddenBlock-title
+                img.chp(src='img/episodeChip1.svg' alt='chip')
+                .hiddenBlock-title-title Episode 12
+              .hiddenBlock-text Remote programming
+              .hiddenBlock-play
+                img(src='img/episodePlay.svg' alt='▹')
+            img(src='img/masterclass3.png' alt='img')
+          .episode-iframeBlock
+            .videosViewed
+              .videosItem-number 05
+            .hiddenBlock
+              .hiddenBlock-title
+                img.chp(src='img/episodeChip1.svg' alt='chip')
+                .hiddenBlock-title-title Episode 12
+              .hiddenBlock-text Remote programming
+              .hiddenBlock-play
+                img(src='img/episodePlay.svg' alt='▹')
+            img(src='img/masterclass3.png' alt='img')
+          .episode-iframeBlock
+            .videosViewed
+              .videosItem-number 06
+            .hiddenBlock
+              .hiddenBlock-title
+                img.chp(src='img/episodeChip1.svg' alt='chip')
+                .hiddenBlock-title-title Episode 12
+              .hiddenBlock-text Remote programming
+              .hiddenBlock-play
+                img(src='img/episodePlay.svg' alt='▹')
+            img(src='img/masterclass3.png' alt='img')
+          .episode-iframeBlock
+            .videosViewed
+              .videosItem-number 07
+            .hiddenBlock
+              .hiddenBlock-title
+                img.chp(src='img/episodeChip1.svg' alt='chip')
+                .hiddenBlock-title-title Episode 12
+              .hiddenBlock-text Remote programming
+              .hiddenBlock-play
+                img(src='img/episodePlay.svg' alt='▹')
+            img(src='img/yellowMan.png' alt='img')
+          .episode-iframeBlock
+            .videosViewed
+              .videosItem-number 08
+            .hiddenBlock
+              .hiddenBlock-title
+                img.chp(src='img/episodeChip1.svg' alt='chip')
+                .hiddenBlock-title-title Episode 12
+              .hiddenBlock-text Remote programming
+              .hiddenBlock-play
+                img(src='img/episodePlay.svg' alt='▹')
+            img(src='img/masterclass1.png' alt='img')
+          .episode-iframeBlock
+            .videosViewed
+              .videosItem-number 09
+            .hiddenBlock
+              .hiddenBlock-title
+                img.chp(src='img/episodeChip1.svg' alt='chip')
+                .hiddenBlock-title-title Episode 12
+              .hiddenBlock-text Remote programming
+              .hiddenBlock-play
+                img(src='img/episodePlay.svg' alt='▹')
+            img(src='img/masterclass2.png' alt='img')
+          .episode-iframeBlock
+            .videosViewed
+              .videosItem-number 10
+            .hiddenBlock
+              .hiddenBlock-title
+                img.chp(src='img/episodeChip1.svg' alt='chip')
+                .hiddenBlock-title-title Episode 12
+              .hiddenBlock-text Remote programming
+              .hiddenBlock-play
+                img(src='img/episodePlay.svg' alt='▹')
+            img(src='img/masterclass3.png' alt='img')
+          .episode-iframeBlock
+            .videosViewed
+              .videosItem-number 11
+            .hiddenBlock
+              .hiddenBlock-title
+                img.chp(src='img/episodeChip1.svg' alt='chip')
+                .hiddenBlock-title-title Episode 12
+              .hiddenBlock-text Remote programming
+              .hiddenBlock-play
+                img(src='img/episodePlay.svg' alt='▹')
+            img(src='img/masterclass3.png' alt='img')
+          .episode-iframeBlock
+            .videosViewed
+              .videosItem-number 12
+            .hiddenBlock
+              .hiddenBlock-title
+                img.chp(src='img/episodeChip1.svg' alt='chip')
+                .hiddenBlock-title-title Episode 12
+              .hiddenBlock-text Remote programming
+              .hiddenBlock-play
+                img(src='img/episodePlay.svg' alt='▹')
+            img(src='img/masterclass3.png' alt='img')
+          .episode-iframeBlock
+            .videosViewed
+              .videosItem-number 13
+            .hiddenBlock
+              .hiddenBlock-title
+                img.chp(src='img/episodeChip1.svg' alt='chip')
+                .hiddenBlock-title-title Episode 12
+              .hiddenBlock-text Remote programming
+              .hiddenBlock-play
+                img(src='img/episodePlay.svg' alt='▹')
+            img(src='img/yellowMan.png' alt='img')
+          .episode-iframeBlock
+            .videosViewed
+              .videosItem-number 14
+            .hiddenBlock
+              .hiddenBlock-title
+                img.chp(src='img/episodeChip1.svg' alt='chip')
+                .hiddenBlock-title-title Episode 12
+              .hiddenBlock-text Remote programming
+              .hiddenBlock-play
+                img(src='img/episodePlay.svg' alt='▹')
+            img(src='img/masterclass1.png' alt='img')
+          .episode-iframeBlock
+            .videosViewed
+              .videosItem-number 15
+            .hiddenBlock
+              .hiddenBlock-title
+                img.chp(src='img/episodeChip1.svg' alt='chip')
+                .hiddenBlock-title-title Episode 12
+              .hiddenBlock-text Remote programming
+              .hiddenBlock-play
+                img(src='img/episodePlay.svg' alt='▹')
+            img(src='img/masterclass2.png' alt='img')
+          .episode-iframeBlock
+            .videosViewed
+              .videosItem-number 16
+            .hiddenBlock
+              .hiddenBlock-title
+                img.chp(src='img/episodeChip1.svg' alt='chip')
+                .hiddenBlock-title-title Episode 12
+              .hiddenBlock-text Remote programming
+              .hiddenBlock-play
+                img(src='img/episodePlay.svg' alt='▹')
+            img(src='img/masterclass3.png' alt='img')
+          .episode-iframeBlock
+            .videosViewed
+              .videosItem-number 17
+            .hiddenBlock
+              .hiddenBlock-title
+                img.chp(src='img/episodeChip1.svg' alt='chip')
+                .hiddenBlock-title-title Episode 12
+              .hiddenBlock-text Remote programming
+              .hiddenBlock-play
+                img(src='img/episodePlay.svg' alt='▹')
+            img(src='img/masterclass3.png' alt='img')
+          .episode-iframeBlock
+            .videosViewed
+              .videosItem-number 18
+            .hiddenBlock
+              .hiddenBlock-title
+                img.chp(src='img/episodeChip1.svg' alt='chip')
+                .hiddenBlock-title-title Episode 12
+              .hiddenBlock-text Remote programming
+              .hiddenBlock-play
+                img(src='img/episodePlay.svg' alt='▹')
+            img(src='img/masterclass3.png' alt='img')
+          .episode-iframeBlock
+            .videosViewed
+              .videosItem-number 19
+            .hiddenBlock
+              .hiddenBlock-title
+                img.chp(src='img/episodeChip1.svg' alt='chip')
+                .hiddenBlock-title-title Episode 12
+              .hiddenBlock-text Remote programming
+              .hiddenBlock-play
+                img(src='img/episodePlay.svg' alt='▹')
+            img(src='img/yellowMan.png' alt='img')
+          .episode-iframeBlock
+            .videosViewed
+              .videosItem-number 20
+            .hiddenBlock
+              .hiddenBlock-title
+                img.chp(src='img/episodeChip1.svg' alt='chip')
+                .hiddenBlock-title-title Episode 12
+              .hiddenBlock-text Remote programming
+              .hiddenBlock-play
+                img(src='img/episodePlay.svg' alt='▹')
+            img(src='img/masterclass1.png' alt='img')
+          .episode-iframeBlock-mobile
+            // <div class="viewed">viewed</div>
+            img(src='img/masterclass1.png' alt='')
+            .episode-iframeBlock-mobile-content
+              .episode-iframeBlock-mobile-title Remote programming
+              .episode-iframeBlock-mobile-code ZN3N-8T4B-CDRZ
+          .episode-iframeBlock-mobile
+            // <div class="viewed">viewed</div>
+            img(src='img/masterclass2.png' alt='')
+            .episode-iframeBlock-mobile-content
+              .episode-iframeBlock-mobile-title Remote programming
+              .episode-iframeBlock-mobile-code ZN3N-8T4B-CDRZ
+          .episode-iframeBlock-mobile
+            img(src='img/masterclass3.png' alt='')
+            .episode-iframeBlock-mobile-content
+              .episode-iframeBlock-mobile-title Remote programming
+              .episode-iframeBlock-mobile-code ZN3N-8T4B-CDRZ
+          .episode-iframeBlock-mobile
+            img(src='img/masterclass1.png' alt='')
+            .episode-iframeBlock-mobile-content
+              .episode-iframeBlock-mobile-title Remote programming
+              .episode-iframeBlock-mobile-code ZN3N-8T4B-CDRZ
+          .episode-iframeBlock-mobile
+            img(src='img/masterclass2.png' alt='')
+            .episode-iframeBlock-mobile-content
+              .episode-iframeBlock-mobile-title Remote programming
+              .episode-iframeBlock-mobile-code ZN3N-8T4B-CDRZ
+          .paging
+            a(href='#') 1
+            a(href='#') 2
+            a(href='#') 3
+            a(href='#') 4
+  section.cont_shop.contShopOfEpisode
+    .container
+      .row
+        .col-sm-12
+          .cont_sohp_wrap
+            .cont_shop_img
+              img(src='img/logok.svg' alt='')
+            .cont_shop_info
+              h4 We are glad to see you in our online-shop
+              a.yellowButton(href='#') Visit Shop
+            .cont_shop_fon
+              img(src='img/laptop.png' alt='')
+  include footer.pug
+
+    

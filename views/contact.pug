@@ -1,0 +1,53 @@
+extends layout
+block content
+
+  .wrapper
+    .content
+      include header.pug
+      section.contact_wrap
+        .container
+          .row
+            .col-12
+              .titleBlock
+                h1 Contact Us
+                p We&rsquo;re happy to answer any questions you may have
+        .container
+          .row
+            .col-12.col-md-6
+              .cont_one
+                .cont_one_img
+                  img(src='img/ico17.svg' alt='')
+                .cont_one_info
+                  h4 Phone
+                  p
+                    | Feel free to call from 09:00 till 19:00
+                    | on any day<br>
+                    a(href='tel:+375296013289') +375 (29) 601-32-89
+            .col-12.col-md-6
+              .cont_one
+                .cont_one_img
+                  img(src='img/ico18.svg' alt='')
+                .cont_one_info
+                  h4 E-mail
+                  p
+                    | You can write us in any time<br>
+                    a(href='mailto:upstream97@gmail.com') upstream97@gmail.com
+            .col-12
+              .cont_adr
+                h4
+                  | Revolute Key Limited
+                  | 4th Floor, 7 Westferry Circus
+                  | E14 4HD London, United Kingdom
+      section.cont_shop
+        .container
+          .row
+            .col-sm-12
+              .cont_sohp_wrap
+                .cont_shop_img
+                  img(src='img/logok.svg' alt='')
+                .cont_shop_info
+                  h4 We are glad to see you in our online-shop
+                  a.yellowButton(href='#') Visit Shop
+                .cont_shop_fon
+                  img(src='img/img9.png' alt='')
+  include footer.pug  

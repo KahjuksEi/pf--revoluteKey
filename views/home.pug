@@ -1,0 +1,42 @@
+extends layout
+block content
+
+  include header.pug
+  section
+    .container.contHome
+      .row
+        .homeBook
+          .multiple-items
+            .homeBook-item
+            .homeBook-item
+            .homeBook-item
+  section
+    .container
+      .aboutBook
+        .aboutBook-content
+          .aboutBook-content-title About this book
+          .aboutBook-content-text
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id orci eros.
+              | In porta odio at tellus sagittis, ut vestibulum nulla eleifend. Vivamus ut ex ac est tempor porttitor.
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id orci eros. In porta odio at tellus sagittis,
+              | ut vestibulum nulla eleifend. Vivamus ut ex ac est tempor porttitor.
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id orci eros. In porta odio at tellus sagittis,
+              | ut vestibulum nulla eleifend. Vivamus ut ex ac est tempor porttitor.
+        .aboutBook-buttons
+          .aboutBook-buttons-padd
+            .aboutBook-buttons-title Materials:
+            a.yellowButton(href='#')
+              img(src='img/download1.png' alt='⤓')
+              | Download Book
+            .aboutBook-buttons-text OR
+            a.yellowButton.watchButton(href='#') Watch in Browser
+  include footer.pug
+  script.
+    $('.multiple-items').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1
+      });

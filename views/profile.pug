@@ -1,0 +1,44 @@
+extends layout
+block content
+
+  .wrapper
+    .content
+      include header.pug
+      section.productsWrap.myProfile
+        .container
+          .row
+            .col-12
+              .titleBlock
+                h3 My Profile
+                p We&apos;re happy to answer any questions you may have
+      section.profile-card-section
+        .profile-card.pc1
+          .profile-card-face.face1
+            img(src='img/face.png')
+          .profile-card-name Alexander Chichaev
+          .profile-card-email
+            a(href='#')
+            | upstream97@gmail.com
+          .profile-card-login
+            a(href='login') Log Out
+        .profile-card.pc2
+          .profile-card-face.face2
+            img(src='img/faceQ.png')
+          .profile-card-name Additional Info
+          .profile-card-login.pcl1
+            a(href='/instruction') Instruction
+          .profile-card-login.pcl2
+            a(href='#') Download Player
+      section.cont_shop.contShopOfProfile
+        .container
+          .row
+            .col-sm-12
+              .cont_sohp_wrap
+                .cont_shop_img
+                  img(src='img/logok.svg' alt='')
+                .cont_shop_info
+                  h4 We are glad to see you in our online-shop
+                  a.yellowButton(href='#') Visit Shop
+                .cont_shop_fon
+                  img(src='img/img9.png' alt='')
+  include footer.pug

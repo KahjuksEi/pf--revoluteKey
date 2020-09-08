@@ -1,0 +1,107 @@
+extends layout
+block content
+
+  .wrapper
+    .content
+      include header.pug
+      section.bann_top
+        .container
+          .row
+            .col-sm-12
+              .bann_top_info
+                p
+                  img(alt='' src='img/ico14.svg')
+                  span PDF-tutorial
+                h1 Basic Course
+                p Make your first step in key programming. Try this basic course for juniors.
+                a.whiteButton(href='#') Join Course
+                img.ban_image.trans(alt='' src='img/img7.png')
+      section.what_get
+        .container
+          .row
+            .col-12
+              .headline
+                h3 What will you get?
+        .container
+          .row
+            .col-sm-12
+              .what_get_wrap
+                .what_get_one
+                  .what_get_one_img
+                    img(alt='' src='img/ico15.svg')
+                  .what_get_one_imfo
+                    h4 20 Texts
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                .what_get_one
+                  .what_get_one_img
+                    img(alt='' src='img/ico16.svg')
+                  .what_get_one_imfo
+                    h4 6 Schemes
+                    p Cras at tortor eget quam scelerisque hendrerit
+      section.videoWrap.curs_list
+        .container
+          .row
+            .col-12.col-md-6
+              .videoInfo
+                h3 Slogans about course
+                p
+                  | On our service you can mprove your skills to knew more about Web and mobile design Invite expirenced
+            .col-12.col-md-6
+              img(alt='' src='img/img2.png')
+      section.pdf_slide
+        .container
+          .row
+            .col-12.col-md-6
+              .slider-nav
+                .slid_pres
+                  h3 PDF-Tutorial
+                  p
+                    | Professional key master, 20 years of experience. Specializing on key programming. Professional key master, 20 years of experience.
+                .slid_pres
+                  h3 PDF-Tutorial 2
+                  p
+                    | Professional key master, 20 years of experience. Specializing on key programming. Professional key master, 20 years of experience.
+                .slid_pres
+                  h3 PDF-Tutorial 3
+                  p
+                    | Professional key master, 20 years of experience. Specializing on key programming. Professional key master, 20 years of experience.
+              .slider_navigate
+                | 1
+            .col-12.col-md-6
+              .text-center.slider-for
+                div
+                  img(alt='' src='img/img12.png')
+                div
+                  img(alt='' src='img/img4.png')
+                div
+                  img(alt='' src='img/img5.png')
+      section.buy
+        .container
+          .row
+            .col-12.col-md-6
+              .product.basic_pro
+                .productImg
+                  img(alt='' src='img/img8.png')
+                .productFeatures
+                  ul
+                    li
+                      img(alt='' src='img/icoFile.svg')
+                      span 20 texts
+                    li
+                      img(alt='' src='img/icoSystem.svg')
+                      span 6 schemes
+                .abri_curs.d-none.d-xl-block
+                  | ba
+            .col-12.col-md-6
+              .buy_course
+                .buy_course_info
+                  h3 Basic Course
+                  p
+                    | Professional key master, 20 years of experience. Specializing on key programming. Professional key master, 20 years of experience.
+                .buy_course_prise
+                  p.old_prise $109.99
+                  p.action_prise $89.99
+                .buy_course_foot
+                  a.yellowButton(href='#') Buy
+  include footer.pug  
+  

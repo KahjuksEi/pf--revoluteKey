@@ -1,0 +1,3001 @@
+@font-face {
+  font-family: 'PT Sans';
+  src: url('../fonts/PTSans-Regular.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PT Sans Bold';
+  src: url('../fonts/PTSansBold.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Futura PTHav';
+  src: url('../fonts/../fonts/FuturaPT-Heavy.eot');
+  src: local('../fonts/Futura PT Heavy'), local('../fonts/FuturaPT-Heavy'), url('../fonts/FuturaPT-Heavy.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/FuturaPT-Heavy.ttf') format('truetype'),
+  url('../fonts/FuturaPT-Heavy.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Futura PT';
+  src: url('../fonts/FuturaPT-Medium.eot');
+  src: local('../fonts/Futura PT Medium'), local('../fonts/FuturaPT-Medium'), url('../fonts/FuturaPT-Medium.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/FuturaPT-Medium.ttf') format('truetype'),
+  url('../fonts/FuturaPT-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Futura PT Obl';
+  src: url('../fonts/FuturaPT-MediumObl.eot');
+  src: local('../fonts/Futura PT Medium Oblique'), local('../fonts/FuturaPT-MediumObl'), url('../fonts/FuturaPT-MediumObl.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/FuturaPT-MediumObl.ttf') format('truetype'),
+  url('../fonts/FuturaPT-MediumObl.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Futura PT CondMed';
+  src: url('../fonts/FuturaPTCond-Medium.eot');
+  src: local('../fonts/Futura PT Cond Medium'), local('../fonts/FuturaPTCond-Medium'), url('../fonts/FuturaPTCond-Medium.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/FuturaPTCond-Medium.ttf') format('truetype'),
+  url('../fonts/FuturaPTCond-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Futura PT lt';
+  src: url('../fonts/FuturaPT-LightObl.eot');
+  src: local('../fonts/Futura PT Light Oblique'), local('../fonts/FuturaPT-LightObl'), url('../fonts/FuturaPT-LightObl.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/FuturaPT-LightObl.ttf') format('truetype'),
+  url('../fonts/FuturaPT-LightObl.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Futura PT Book';
+  src: url('../fonts/FuturaPT-Book.eot');
+  src: local('../fonts/Futura PT Book'), local('../fonts/FuturaPT-Book'), url('../fonts/FuturaPT-Book.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/FuturaPT-Book.ttf') format('truetype'),
+  url('../fonts/FuturaPT-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Futura PT Cond';
+  src: url('../fonts/FuturaPTCond-Bold.eot');
+  src: local('../fonts/Futura PT Cond Bold'), local('../fonts/FuturaPTCond-Bold'), url('../fonts/FuturaPTCond-Bold.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/FuturaPTCond-Bold.ttf') format('truetype'),
+  url('../fonts/FuturaPTCond-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Futura PT Book Obl';
+  src: url('../fonts/FuturaPT-BookObl.eot');
+  src: local('../fonts/Futura PT Book Oblique'), local('../fonts/FuturaPT-BookObl'), url('../fonts/FuturaPT-BookObl.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/FuturaPT-BookObl.ttf') format('truetype'),
+  url('../fonts/FuturaPT-BookObl.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Futura PT Cond Extra';
+  src: url('../fonts/FuturaPTCond-ExtraBoldObl.eot');
+  src: local('../fonts/Futura PT Cond Extra Bold Oblique'), local('../fonts/FuturaPTCond-ExtraBoldObl'), 
+  url('../fonts/FuturaPTCond-ExtraBoldObl.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/FuturaPTCond-ExtraBoldObl.ttf') format('truetype'),
+  url('../fonts/FuturaPTCond-ExtraBoldObl.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Futura PTLg';
+  src: url('../fonts/FuturaPT-Light.eot');
+  src: local('../fonts/Futura PT Light'), local('../fonts/FuturaPT-Light'), url('../fonts/FuturaPT-Light.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/FuturaPT-Light.ttf') format('truetype'),
+  url('../fonts/FuturaPT-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Futura PT bol';
+  src: url('../fonts/FuturaPT-BoldObl.eot');
+  src: local('../fonts/Futura PT Bold Oblique'), local('../fonts/FuturaPT-BoldObl'), url('../fonts/FuturaPT-BoldObl.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/FuturaPT-BoldObl.ttf') format('truetype'),
+  url('../fonts/FuturaPT-BoldObl.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Futura PT Demi Obl';
+  src: url('../fonts/FuturaPT-DemiObl.eot');
+  src: local('../fonts/Futura PT Demi Oblique'), local('../fonts/FuturaPT-DemiObl'), url('../fonts/FuturaPT-DemiObl.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/FuturaPT-DemiObl.ttf') format('truetype'),
+  url('../fonts/FuturaPT-DemiObl.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Futura PT Cond Extra';
+  src: url('../fonts/FuturaPTCond-ExtraBold.eot');
+  src: local('../fonts/Futura PT Cond Extra Bold'), local('../fonts/FuturaPTCond-ExtraBold'), 
+  url('../fonts/FuturaPTCond-ExtraBold.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/FuturaPTCond-ExtraBold.ttf') format('truetype'),
+  url('../fonts/FuturaPTCond-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Futura PT Demi';
+  src: url('../fonts/FuturaPT-Demi.eot');
+  src: local('../fonts/Futura PT Demi'), local('../fonts/FuturaPT-Demi'), url('../fonts/FuturaPT-Demi.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/FuturaPT-Demi.ttf') format('truetype'),
+  url('../fonts/FuturaPT-Demi.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Futura PT hav';
+  src: url('../fonts/FuturaPT-HeavyObl.eot');
+  src: local('../fonts/Futura PT Heavy Oblique'), local('../fonts/FuturaPT-HeavyObl'), url('../fonts/FuturaPT-HeavyObl.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/FuturaPT-HeavyObl.ttf') format('truetype'),
+  url('../fonts/FuturaPT-HeavyObl.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Futura PT Extra';
+  src: url('../fonts/FuturaPT-ExtraBoldObl.eot');
+  src: local('../fonts/Futura PT Extra Bold Oblique'), local('../fonts/FuturaPT-ExtraBoldObl'), 
+  url('../fonts/FuturaPT-ExtraBoldObl.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/FuturaPT-ExtraBoldObl.ttf') format('truetype'),
+  url('../fonts/FuturaPT-ExtraBoldObl.woff') format('woff'); 
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Futura PT Cond Book';
+  src: url('../fonts/FuturaPTCond-Book.eot');
+  src: local('../fonts/Futura PT Cond Book'), local('../fonts/FuturaPTCond-Book'), url('../fonts/FuturaPTCond-Book.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/FuturaPTCond-Book.ttf') format('truetype'),
+  url('../fonts/FuturaPTCond-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Futura PTBol';
+  src: url('../fonts/FuturaPT-Bold.eot');
+  src: local('../fonts/Futura PT Bold'), local('../fonts/FuturaPT-Bold'), url('../fonts/FuturaPT-Bold.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/FuturaPT-Bold.ttf') format('truetype'),
+  url('../fonts/FuturaPT-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Futura PT ExtraBol';
+  src: url('../fonts/FuturaPT-ExtraBold.eot');
+  src: local('../fonts/Futura PT Extra Bold'), local('../fonts/FuturaPT-ExtraBold'), url('../fonts/FuturaPT-ExtraBold.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/FuturaPT-ExtraBold.ttf') format('truetype'),
+  url('../fonts/FuturaPT-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Futura PT CondBol';
+  src: url('../fonts/FuturaPTCond-BoldObl.eot');
+  src: local('../fonts/Futura PT Cond Bold Oblique'), local('../fonts/FuturaPTCond-BoldObl'), 
+  url('../fonts/FuturaPTCond-BoldObl.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/FuturaPTCond-BoldObl.ttf') format('truetype'),
+  url('../fonts/FuturaPTCond-BoldObl.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Futura PT CondMed';
+  src: url('../fonts/FuturaPTCond-MediumObl.eot');
+  src: local('../fonts/Futura PT Cond Medium Oblique'), local('../fonts/FuturaPTCond-MediumObl'), 
+  url('../fonts/FuturaPTCond-MediumObl.eot?#iefix') format('embedded-opentype'), url('../fonts/FuturaPTCond-MediumObl.ttf') format('truetype'), 
+  url('../fonts/FuturaPTCond-MediumObl.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Futura PT Cond BookObl';
+  src: url('../fonts/FuturaPTCond-BookObl.eot');
+  src: local('../fonts/Futura PT Cond Book Oblique'), local('../fonts/FuturaPTCond-BookObl'), 
+  url('../fonts/FuturaPTCond-BookObl.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/FuturaPTCond-BookObl.ttf') format('truetype'),
+  url('../fonts/FuturaPTCond-BookObl.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic');
+* {
+  /*transition: all 200ms ease;*/
+}
+body {
+  font-family: 'PT Sans', sans-serif;
+  color: #6B6C73;
+}
+html, body {
+  height: 100%;
+}
+h1, h2, h4, h5, h6, .h1, .h2, .h4, .h5, .h6 {
+  font-family: 'Futura PT Book', sans-serif;
+  color: #494B5A;
+}
+h3, .h3 {
+  font-family: 'Futura PT Book', sans-serif;
+  font-size: 32px;
+  color: #494B5A;
+}
+.productTitile p {
+  font-family: 'Futura PT', sans-serif;
+  text-transform: uppercase;
+}
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+li {
+  list-style: none;
+}
+ul {
+  padding-left: 0;
+}
+button:focus {
+  outline: none;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0 auto;
+}
+.content {
+  flex: 1 0 auto;
+  overflow: hidden;
+}
+.footer {
+  flex: 0 0 auto;
+  margin-top: 37px;
+  padding: 46px 0;
+}
+header .col-xs-12 {
+  min-height: 0px;
+}
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+}
+.footerLogoImg {
+  margin-bottom: 15px;
+}
+.paymentLogos {
+  margin-bottom: 20px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #494B5A;
+}
+.navbar-toggle .icon-bar+.icon-bar {
+  margin-top: 4px;
+}
+button.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  outline: none;
+}
+button.navbar-toggle:focus {
+  outline: none;
+}
+.nav>li {
+  position: relative;
+  display: block;
+}
+.nav {
+  padding-left: 0;
+  list-style: none;
+}
+.navbar-header {
+  display: inline-block;
+  width: 100%;
+}
+.navbar-brand img {
+  width: 103px;
+}
+.navbar-nav li a {
+  color: #000;
+  text-transform: uppercase;
+  margin: 6px 0;
+  display: inline-block;
+}
+.navbar-nav li a:hover {
+  text-shadow: 0px 0px 4px #fff;
+  text-decoration: none;
+}
+.navbar {
+  padding: .5rem .5rem .5rem 1rem;
+}
+.mebu_name p {
+  margin-top: 15px;
+  color: #00619f;
+}
+.box_one_ban {
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+  float: left;
+}
+.box_one_ban p {
+  position: absolute;
+  top: 20px;
+  background: #ffffffb8;
+  left: 0;
+  z-index: 1;
+  font-size: 18px;
+  padding: 5px 17px;
+  width: 100%;
+  min-height: 65px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+.box_one_ban img {
+  width: 100%;
+  transform: scale(0.99);
+  transition: all 200ms ease;
+}
+.box_one_ban:hover img {
+  transform: scale(1);
+  filter: brightness(0.5);
+  transition: all 200ms ease;
+}
+.box_one_ban a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.blue_but {
+  text-transform: uppercase;
+  color: #fff;
+  background: #00619f;
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  padding: 20px 10px;
+  width: 287px;
+  text-align: center;
+  font-size: 20px;
+  transition: all 200ms ease;
+}
+.blue_but:hover {
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0px 0px 10px #00619f;
+  transition: all 200ms ease;
+}
+.blue_but.blue_but_sm {
+  width: auto;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: all 200ms ease;
+}
+.img_box img {
+  width: 100%;
+}
+.bg_grey {
+  background: #e8e8e8;
+}
+.svg_style {
+  width: 100%;
+}
+.slidpro_img img {
+  width: 100%;
+  box-shadow: 0px 0px 4px #676767;
+}
+.white_but {
+  text-transform: capitalize;
+  color: #000000;
+  background: #fff;
+  border: 1px solid #00619f;
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  border-radius: 40px;
+  padding: 8px 20px;
+  width: auto;
+  text-align: center;
+  font-size: 14px;
+  transition: all 200ms ease;
+}
+.white_but:hover {
+  color: #00619f;
+  text-decoration: none;
+  box-shadow: 0px 0px 10px #00619f;
+  transition: all 200ms ease;
+}
+.b_grey_but {
+  font-size: 14px;
+  background: #ddd;
+  padding: 16px 40px;
+  border: none;
+  outline: none;
+}
+.slid_clients_one img {
+  width: 100%;
+}
+.call_button .blue_but {
+  border-radius: 0;
+  font-size: 18px;
+  width: 100%;
+}
+.top_info {
+  margin-top: 15px;
+}
+.top_contact p {
+  margin-bottom: 0;
+}
+.top_contact p a {
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+}
+.videoInfo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.videoWrap iframe {
+  max-width: 100%;
+  height: 200px;
+  border-radius: 8px;
+}
+.videoInfo p {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.headline {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.sertificationImg {
+  text-align: center;
+  margin-bottom: 31px;
+  margin-top: 8px;
+}
+footer {
+  background: #FBFBFC;
+}
+.accordion {
+  margin-bottom: 60px;
+}
+.whyDoYouNeedWrap {
+  padding-bottom: 43px;
+}
+@media (max-width: 767px) {
+  .mobileCenter {
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: center;
+  }
+  .offcanvas-stop-scrolling {
+    height: 100%;
+    overflow: hidden
+  }
+  .navbar-default .navbar-offcanvas {
+    background-color: #f8f8f8
+  }
+  .navbar-inverse .navbar-offcanvas {
+    background-color: #222
+  }
+  .navbar-offcanvas {
+    position: fixed;
+    width: 100%;
+    max-width: 316px;
+    left: -316px;
+    top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    z-index: 999;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transition: all 0.15s ease-in;
+    transition: all 0.15s ease-in
+  }
+  .navbar-offcanvas.in {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3)
+  }
+  .navbar-offcanvas.navbar-offcanvas-fade {
+    opacity: 0
+  }
+  .navbar-offcanvas.navbar-offcanvas-fade.in {
+    opacity: 1
+  }
+  .navbar-offcanvas.offcanvas-transform.in {
+    -webkit-transform: translateX(316px);
+    -ms-transform: translateX(316px);
+    transform: translateX(316px)
+  }
+  .navbar-offcanvas.offcanvas-position.in {
+    left: 0
+  }
+  .navbar-offcanvas.navbar-offcanvas-right {
+    left: auto;
+    right: -316px
+  }
+  .navbar-offcanvas.navbar-offcanvas-right.offcanvas-transform.in {
+    -webkit-transform: translateX(-316px);
+    -ms-transform: translateX(-316px);
+    transform: translateX(-316px)
+  }
+  .navbar-offcanvas.navbar-offcanvas-right.offcanvas-position.in {
+    left: auto;
+    right: 0
+  }
+  .navbar-offcanvas .dropdown.active .caret {
+    border-top: 0;
+    border-bottom: 4px solid
+  }
+  .navbar-offcanvas .dropdown-menu {
+    position: relative;
+    width: 100%;
+    border: inherit;
+    box-shadow: none;
+    -webkit-transition: height 0.15s ease-in;
+    transition: height 0.15s ease-in
+  }
+  .navbar-offcanvas .dropdown-menu.shown {
+    display: block;
+    margin-bottom: 10px
+  }
+}
+.offcanvas-toggle {
+  background: #ffffff00;
+}
+.offcanvas-toggle .icon-bar {
+  background: #000;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out
+}
+.offcanvas-toggle.is-open .icon-bar:nth-child(1) {
+  -webkit-transform: rotate(45deg) translate(5px, 4px);
+  -ms-transform: rotate(45deg) translate(5px, 4px);
+  transform: rotate(45deg) translate(5px, 4px)
+}
+.offcanvas-toggle.is-open .icon-bar:nth-child(2) {
+  opacity: 0
+}
+.offcanvas-toggle.is-open .icon-bar:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translate(4px, -4px);
+  -ms-transform: rotate(-45deg) translate(4px, -4px);
+  transform: rotate(-45deg) translate(4px, -4px)
+}
+.nav.navbar-nav {
+  text-align: center;
+  padding-top: 20px;
+}
+.mebu_name {
+  margin-bottom: 20px;
+}
+.navbar-nav li a {
+  font-size: 20px;
+  color: #6B6C73;
+  font-family: 'Futura PT Book';
+}
+.shopButton {
+  border: 2px solid #F7BD29;
+  color: #F7BD29;
+  border-radius: 4px;
+  min-width: 160px;
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  font-size: 20px;
+}
+.shopButton:hover {
+  color: #F7BD29;
+  text-decoration: none;
+}
+.navbar-nav li a.shopButton {
+  border: 2px solid #F7BD29;
+  color: #F7BD29;
+  border-radius: 4px;
+  min-width: 160px;
+  padding: 7px 10px;
+}
+.navbar-nav li {
+  margin-bottom: 16px;
+}
+h1 {
+  color: #494B5A;
+}
+.titleBlock {
+  text-align: center;
+  margin-bottom: 63px;
+}
+.titleBlock h1 {
+  margin-bottom: 28px;
+  text-transform: capitalize;
+}
+.titleBlock p {
+  font-size: 16px;
+}
+.productTitile {
+  text-align: center;
+}
+.productTitile h3, .productTitile p {
+  margin-bottom: 0;
+}
+.productFooter {
+  text-align: center;
+}
+.productFeatures li {
+  padding: 8px 9px;
+  position: relative;
+  padding-left: 57px;
+}
+.productFeatures span {
+  padding-left: 10px;
+}
+.productFeatures img {
+  width: 18px;
+  border-radius: 0px;
+}
+.productFeatures li:before {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #F1F1F1;
+  background: -moz-linear-gradient(90deg, rgba(255,255,255,0) 0%, #F1F1F1 50%, rgba(255,255,255,0) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(255,255,255,0) 0%, #F1F1F1 50%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, #F1F1F1 50%, rgba(255,255,255,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.productFeatures ul li:last-child:after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #F1F1F1;
+  background: -moz-linear-gradient(90deg, rgba(255,255,255,0) 0%, #F1F1F1 50%, rgba(255,255,255,0) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(255,255,255,0) 0%, #F1F1F1 50%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, #F1F1F1 50%, rgba(255,255,255,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.productImg {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.yellowButton {
+  font-family: 'Futura PT Demi';
+  color: #fff;
+  background: #f7bd29;
+  border-radius: 4px;
+  padding: 11px 0;
+  font-size: 20px;
+  width: 258px;
+  display: inline-block;
+  outline: none;
+  border: none;
+  text-align: center;
+}
+.yellowButton:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.whiteButton {
+  font-family: 'Futura PT Demi';
+  color: #494B5A;
+  background: #fff;
+  border-radius: 4px;
+  padding: 11px 0;
+  font-size: 20px;
+  width: 258px;
+  display: inline-block;
+  outline: none;
+  border: none;
+  text-align: center;
+}
+.whiteButton:hover {
+  color: #494B5A;
+  text-decoration: none;
+  outline: none;
+}
+.grayButton {
+  text-align: center;
+  font-family: 'Futura PT Demi';
+  color: #494B5A;
+  background: #F8F8F8;
+  border-radius: 4px;
+  padding: 11px 0;
+  font-size: 20px;
+  width: 258px;
+  display: inline-block;
+  outline: none;
+  border: none;
+  text-align: center;
+}
+.grayButton:hover {
+  color: #494B5A;
+  text-decoration: none;
+}
+.productBest .grayButton {
+  background: #f7bd29;
+  color: #fff;
+}
+.getStarted .grayButton {
+  width: 65px;
+  margin-left: 15px;
+}
+.product {
+  box-shadow: 0px 12px 64px rgba(73, 75, 90, 0.12);
+  border-radius: 8px;
+  margin-bottom: 40px;
+  padding: 32px 10px;
+  position: relative;
+}
+.bestOffer {
+  position: absolute;
+      top: -31px;
+      width: 100%;
+      text-align: center;
+      background: #f7bd29;
+      left: 0;
+      color: #fff;
+      border-radius: 8px;
+      padding: 10px 10px;
+      padding-bottom: 17px;
+      font-family: Futura PT Demi;
+      font-size: 18px;
+}
+.bestOffer:before {
+  position: absolute;
+  content: '';
+  background: #fff;
+  bottom: -7px;
+  left: 0;
+  width: 100%;
+  height: 17px;
+  border-radius: 8px;
+  z-index: 1;
+}
+.product.productBest {
+  margin-top: 25px;
+}
+.productFeatures {
+  margin-top: 20px;
+  margin-bottom: 23px;
+  padding: 0 20px;
+}
+.videoWrap {
+  background: #FBFBFC;
+  padding: 60px 0px;
+  margin-bottom: 0px;
+}
+section.faqWrap {
+  padding-top: 59px;
+}
+.videoInfo p {
+  margin-bottom: 10px;
+}
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: none;
+  border-radius: .25rem;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 32px rgba(73, 75, 90, 0.16);
+  border-radius: 4px;
+  margin-bottom: 7px;
+}
+.accordion>.card:not(:last-of-type) {
+  border-bottom: 0;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.accordion>.card:not(:last-of-type) {
+  border-bottom: 0;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.card-header {
+  padding: .75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: #fff;
+  border-bottom: 0;
+  font-family: 'Futura PT Book', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  position: relative;
+  color: #494B5A;
+  cursor: pointer;
+}
+.card-header i {
+  position: absolute;
+  right: 0;
+  top: calc(50% - 20px);
+  transform: rotate(45deg);
+  transition: all;
+}
+.card-body {
+  padding-top: 0;
+  color: #6B6C73;
+}
+.card-header.collapsed i {
+  transform: rotate(0deg);
+  transition: all;
+}
+.benefitItem h4 {
+  color: #F7BD29;
+  font-family: 'Futura PTBol';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 67px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 2px;
+}
+.benefitItem {
+  margin-bottom: 18px;
+}
+.benefitItem p {
+  font-size: 16px;
+  text-align: center;
+  color: #6B6C73;
+}
+.mentorInfo {
+  text-align: center;
+}
+.mentorInfo h4 {
+  color: #6B6C73;
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+.mentorInfo p {
+  color: #6B6C73;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+.mentorInfo p span {
+  color: #494B5A;
+  font-size: 28px;
+}
+.mentorInfo ul li {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 5px;
+}
+.mentorWrap {
+  background: #FBFBFC;
+  padding: 64px 0;
+  margin-bottom: 62px;
+}
+.testimonialsSlide {
+  box-shadow: 0px 12px 64px rgba(73, 75, 90, 0.12);
+  border-radius: 8px;
+  position: relative;
+}
+.testimonailsSlideInfo {
+  background: #fff;
+  padding: 27px 18px 4px 19px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.slick-slide.slick-active .testimonialsSlide {
+  z-index: 2;
+}
+.testimonialsSlider .slick-slide {
+  opacity: 0.5;
+  margin: 0 8px;
+  padding-bottom: 60px;
+}
+.testimonialsSlider .slick-slide.slick-active {
+  opacity: 1;
+}
+.sertification {
+  background: #FAFAFA;
+  padding: 65px 0;
+  padding-bottom: 0px;
+  margin-bottom: 59px;
+}
+.productStartedWrap {
+  margin-top: 16px;
+}
+.sertificationImg img {
+  width: 82%;
+}
+.sertificationInfo h4 {
+  font-size: 28px;
+}
+.mentorImg {
+  margin-bottom: 25px;
+  width: 199px;
+  margin: 0 auto;
+  padding-top: 15px;
+  margin-bottom: 33px;
+}
+.sertificationInfo {
+  text-align: center;
+  margin-bottom: 35px;
+}
+.getStarted {
+  background: rgb(250, 250, 240);
+  background: linear-gradient(180deg, rgba(250, 250, 240, 0) 0%, rgba(250, 250, 240, 1) 50%, rgba(250, 250, 240, 0) 100%);
+}
+.getStarted h3 {
+  text-align: center;
+  padding: 5px 10px;
+}
+.productStartImg {
+  margin-right: 12px;
+  width: 25%;
+}
+.productStartInfo {
+  width: 44%;
+}
+.productStartButton {}
+.productStart {
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 23px;
+  position: relative;
+  margin-left: 15px;
+  padding: 5px 12px;
+  /* padding-left: 0; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 81px;
+}
+.productStart.productBest {
+  margin-left: 0px;
+  padding-left: 32px;
+}
+.best {
+  background: #f7bd29;
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  left: -37px;
+  width: 104px;
+  height: 100;
+  text-align: center;
+  transform: rotate(-90deg);
+  border-radius: 8px;
+  padding: 0px 0px;
+  padding-bottom: 13px;
+  font-size: 14px;
+}
+.best:before {
+  content: '';
+  position: absolute;
+  width: 104px;
+  background: #fff;
+  border-radius: 8px;
+  left: 0;
+  top: 20px;
+  height: 15px;
+  z-index: 1;
+}
+.fotterMenuCourses h4 {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #494B5A;
+  font-family: 'Futura PT', sans-serif;
+}
+.fotterMenuCourses ul li a {
+  font-size: 18px;
+  color: #6B6C73;
+  text-decoration: none;
+  font-family: 'Futura PT Book', sans-serif;
+}
+.footerContacts a {
+  font-size: 18px;
+  color: #6B6C73;
+  text-decoration: none;
+  font-family: 'Futura PT Book', sans-serif;
+}
+.footerContacts p {
+  margin-bottom: 5px;
+  `
+}
+.footerContacts ul li {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 5px;
+}
+.footer_bottom p {
+  color: #6B6C73;
+}
+.card svg {
+  fill: #494B5A;
+}
+header {
+  /*margin-bottom: 43px;*/
+}
+.productStartInfo h4 {
+  margin-bottom: 0px;
+}
+.productStartInfo p {
+  margin-bottom: 0px;
+}
+.testimonialsSlider {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: 8px;
+}
+.product.productBest .productImg {
+  margin-top: 15px;
+}
+.productsWrap {
+  margin-bottom: 24px;
+  margin-top: 47px;
+}
+.faqWrap .headline {
+  margin-bottom: 29px;
+}
+.mentorInner {
+  background: #FFFFFF;
+  box-shadow: 0px 12px 64px rgba(73, 75, 90, 0.12);
+  border-radius: 8px;
+}
+.mentorInfo ul {
+  margin-top: 14px;
+  margin-bottom: 27px;
+}
+.fotterMenuCourses li {
+  margin-bottom: 9px;
+}
+.fotterMenuCourses {
+  margin-bottom: 27px;
+}
+.footerContacts h4 {
+  font-family: 'Futura PT', sans-serif;
+}
+.bann_top {
+  background: #FFC83A;
+}
+.bann_top_info p {
+  color: #fff;
+  margin-bottom: 7px;
+  padding-right: 30px;
+}
+.bann_top_info h1 {
+  color: #fff;
+}
+.what_get_one_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95px;
+  height: 95px;
+  border: 2px solid #F0F1F2;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 13px;
+}
+.what_get_one_imfo h4 {
+  font-size: 20px;
+}
+.what_get_one {
+  margin-bottom: 28px;
+  padding: 0 20px;
+}
+.what_get_wrap {
+  text-align: center;
+}
+.prog_wrap {
+  position: relative;
+  padding-left: 60px;
+  padding-bottom: 38px;
+}
+.prog_wrap:before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 2px;
+  top: 0;
+  left: 16px;
+  background: rgb(250, 250, 240);
+  background: linear-gradient(180deg, rgba(250, 250, 240, 0) 0%, rgba(247, 189, 41, 1) 16%, rgba(247, 189, 41, 1) 50%, rgba(247, 189, 41, 1) 85%, rgba(250, 250, 240, 0) 100%);
+}
+.prog_one {
+  background: #FFFFFF;
+  box-shadow: 0px 6px 15px rgba(153, 153, 153, 0.3);
+  border-radius: 10px;
+  padding: 5px 17px;
+  position: relative;
+  margin-top: 40px;
+  font-family: 'Futura PTLg';
+}
+.prog_one:before {
+  content: '';
+  position: absolute;
+  left: -47px;
+  top: calc(50% - 1px);
+  width: 39px;
+  height: 2px;
+  background: rgb(247, 189, 41);
+  background: linear-gradient(90deg, rgba(247, 189, 41, 1) 0%, rgba(247, 189, 41, 1) 50%, rgba(250, 250, 240, 0) 100%);
+}
+.prog_one:after {
+  content: '';
+  position: absolute;
+  left: -49px;
+  top: calc(50% - 6px);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgb(247, 189, 41);
+}
+.prog_one h3 span {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: 'Futura PT', sans-serif;
+}
+.prog_one h4 {
+  font-size: 24px;
+  color: #494B5A;
+}
+.prog_one h3 {
+  margin-bottom: 0px;
+}
+.buy .productFeatures li {
+  padding: 8px 5px;
+  position: relative;
+  padding-left: 43px;
+}
+.buy .productFeatures li:before, .buy .productFeatures li:after {
+  display: none;
+}
+.buy_course {
+  text-align: center;
+}
+.old_prise {
+  color: #6B6C73;
+  font-family: 'Futura PTBol', sans-serif;
+  text-decoration: line-through;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+.action_prise {
+  color: #494B5A;
+  font-family: Futura PT;
+  font-size: 38px;
+}
+.bann_top {
+  background: #FFC83A;
+  padding-top: 22px;
+  padding-bottom: 32px;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+.bann_top_info p span {
+  font-size: 16px;
+  padding-left: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 4px;
+}
+.bann_top .whiteButton {
+  width: 183px;
+  margin-top: 2px;
+}
+img.ban_image {
+  position: absolute;
+  top: -39px;
+  right: -197px;
+  width: 297px;
+  display: block;
+}
+.what_get .headline {
+  margin-bottom: 60px;
+}
+.videoWrap.curs_list {
+  background: #fff;
+  padding-top: 34px;
+  padding-bottom: 65px;
+
+}
+.curs_list .videoInfo h3 {
+  margin-bottom: 21px;
+}
+.prog {
+  padding-bottom: 68px;
+}
+.dip_img {
+  margin: 0 30px;
+}
+.videoWrap.dip_list {
+  padding-bottom: 67px;
+}
+.buy {
+  padding-top: 63px;
+}
+.buy .product {
+  padding: 16px 0px;
+  margin-bottom: 64px;
+  min-height: auto;
+}
+.buy .productImg {
+  padding: 0 28px;
+}
+.buy .best {
+  background: #f7bd29;
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  left: -166px;
+  top: 155px;
+  width: 338px;
+  text-align: center;
+  transform: rotate(-90deg);
+  border-radius: 8px;
+  padding: 0px 0px;
+  padding-bottom: 7px;
+  font-size: 14px;
+}
+.buy .best:before {
+  width: 339px;
+}
+img.ban_image.trans {
+  transform: rotate(-45deg);
+}
+.cont_one_img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border: 2px solid #F0F1F2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 11px;
+}
+.cont_one_img img{border-radius: 0px;}
+.cont_one_info p a {
+  color: #f7bd29;
+  font-weight: 600;
+  text-decoration: none;
+}
+.cont_one_info {
+  text-align: center;
+}
+.cont_one_info h4 {
+  font-size: 20px;
+}
+.cont_one_info p {
+  font-size: 16px;
+}
+.cont_adr {
+  text-align: center;
+}
+.cont_adr h4 {
+  font-size: 20px;
+}
+.cont_one:hover {
+  background: #FBFBFC;
+}
+.cont_sohp_wrap {
+  background: #FFFFFF;
+  box-shadow: 0px 12px 64px rgba(73, 75, 90, 0.12);
+  border-radius: 8px;
+  padding: 31px 10px 10px 10px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 71px;
+  padding-bottom: 277px;
+}
+.contact_wrap {
+  margin-top: 37px;
+}
+.contact_wrap .titleBlock h1 {
+  margin-bottom: 2px;
+}
+.contact_wrap .titleBlock {
+  margin-bottom: 26px;
+}
+.cont_one {
+  padding: 37px 36px;
+}
+.cont_adr {
+  text-align: center;
+  padding: 14px 37px;
+  margin-bottom: 46px;
+}
+.cont_shop_img {
+  margin-bottom: 19px;
+}
+.cont_shop_info h4 {
+  font-size: 32px;
+}
+.cont_shop_info {
+  padding: 0 20px;
+  margin-bottom: 45px;
+}
+.cont_shop_fon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -35px;
+  /* width: 80%; */
+  padding: 0 58px;
+}
+.step {
+  margin-top: 54px;
+}
+.step_one {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.step_one_img {
+  box-shadow: 0px 12px 64px rgba(73, 75, 90, 0.12);
+  margin-bottom: 94px;
+}
+.step_one_old {
+  text-align: center;
+}
+.mob_log {
+  float: right;
+  display: inline-block;
+  font-size: 18px;
+  color: #6B6C73;
+  font-family: 'Futura PT Book', sans-serif;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+.otst a img {
+  max-width: 38px;
+  max-height: 38px;
+  border-radius: 50%;
+  border: 2px solid #f7bd29;
+}
+.slick-slide img {
+  margin: 0 auto;
+  margin-bottom: -8px;
+}
+.pdf_slide {
+  background: #FAFAFA;
+}
+.prev.slick-arrow {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - -21px);
+  z-index: 2;
+}
+.next.slick-arrow {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 54px);
+  z-index: 2;
+}
+.slider-nav {
+  text-align: center;
+  padding-bottom: 33px;
+  margin-bottom: 30px;
+  padding-top: 40px;
+}
+.slider_navigate {
+    text-align: center;
+    position: absolute;
+    bottom: 34px;
+    left: 0;
+    right: 0;
+    font-size: 18px;
+}
+.slick-disabled {
+  opacity: 0.5;
+}
+.mebu_name {
+    margin-bottom: 40%;
+}
+
+.navbar-nav li.mebu_name {
+    margin-bottom: 40%;
+}
+.productsWrap.master .titleBlock h3{
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+.productsWrap.master .titleBlock p{
+  width: 80%;
+  margin: 0 auto;
+}
+.videoWrap.curs_list .container:first-child{ 
+  margin-bottom: 69px;
+}
+.videoWrap.curs_list .container:nth-child(2){ 
+  margin-bottom: 69px;
+}
+.productsWrap.master{
+    margin-bottom: 0px;
+}
+.videoWrap.master_one {
+    margin-bottom: 57px;
+        padding-bottom: 40px;
+}
+@media (min-height: 812px){
+  .navbar-nav li.mebu_name {
+      margin-bottom: 61%;
+  }
+}
+@media (max-width: 320px) {
+  img.ban_image {
+    display: none;
+  }
+  .buy .best {
+    background: #f7bd29;
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    left: -194px;
+    top: 183px;
+    width: 396px;
+    text-align: center;
+    transform: rotate(-90deg);
+    border-radius: 8px;
+    padding: 0px 0px;
+    padding-bottom: 7px;
+    font-size: 14px;
+  }
+  .buy .best:before {
+    width: 396px;
+  }
+  .cont_sohp_wrap .yellowButton {
+    width: 100%;
+  }
+  .cont_shop_fon {
+    padding: 0 18px;
+  }
+  .navbar-offcanvas {
+    max-width: 258px;
+  }
+  .mob_log img {
+    max-width: 38px;
+    max-height: 38px;
+    border-radius: 50%;
+    border: 2px solid #f7bd29;
+  }
+  .best {
+    left: -29px;
+    width: 77px;
+  }
+  .best:before {
+    width: 78px;
+  }
+}
+@media (min-width: 375px) {
+  .productStartImg {
+    margin-right: 34px;
+  }
+  .productStart {
+    min-height: 108px;
+  }
+  .productFeatures li {
+    padding-left: 101px;
+  }
+  .buy .productFeatures ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-bottom: 0;
+  }
+  .buy .productFeatures ul li {
+    padding: 7px 0;
+    width: 50%;
+  }
+  .buy .productFeatures {
+    padding: 0;
+    margin-bottom: 0;
+    padding-left: 14px;
+    margin-top: 28px;
+    padding-bottom: 6px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-toggle {
+    display: none;
+  }
+  .navbar-nav>li {
+    float: left;
+  }
+  .navbar-nav {
+    float: right;
+    margin: 0;
+    display: block;
+    margin-right: 7px;
+  }
+  .navbar-nav li a {
+    color: #6B6C73;
+    margin: 0px 0;
+    padding: 0 9px;
+    font-size: 17px;
+  }
+  .navbar-header {
+    display: inline-block;
+    width: auto;
+  }
+  .navbar-collapse {
+    flex-basis: auto;
+  }
+  .nav.navbar-nav {
+    text-align: center;
+    padding-top: 20px;
+    margin: 0;
+    display: flex;
+    margin-right: 0;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .navbar-nav li a.shopButton {
+    /*min-width: auto;*/
+    /*padding: 10px;*/
+  }
+  .productFeatures li {
+    padding-left: 9px;
+  }
+  .grayButton {
+    width: auto;
+    min-width: 100%;
+  }
+  .product {
+    min-height: 600px;
+  }
+  .product.productBest {
+    min-height: 604px;
+  }
+  .productFeatures {
+    padding: 0 6px;
+  }
+  .productFooter {
+    text-align: center;
+    position: absolute;
+    width: 83%;
+    bottom: 28px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .videoInfo {
+    margin-bottom: 0;
+  }
+  .videoWrap .col-12.col-md-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mentorInner .col-12.col-md-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .accordion {
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+  .mentorImg {
+    padding-top: 62px;
+    margin-bottom: 0;
+  }
+  .mentorInfo ul {
+    margin-top: 14px;
+    margin-bottom: 0;
+  }
+  .mentorInfo {
+    text-align: left;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .sertificationInfo {
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .sertificationDiploma .col-12.col-md-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sertificationDiploma {
+    padding-bottom: 25px;
+  }
+  .getStarted .d-none {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-nav li a {
+    text-transform: none;
+  }
+  .otst {
+    margin-left: 30px;
+  }
+  .getStarted .grayButton {
+    width: 114px;
+    margin-left: 0;
+  }
+  .what_get_wrap {
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .what_get_one {
+    margin-bottom: 28px;
+    padding: 0 20px;
+    width: 30%;
+  }
+  .what_get_one.for_wg {
+    width: 33%;
+  }
+  .buy .product.productBest {
+    min-height: auto;
+  }
+  .buy .best {
+    left: -166px;
+    top: 150px;
+    width: 326px;
+  }
+  .buy .best:before {
+    width: 325px;
+  }
+  .cont_shop_fon {
+    bottom: -179px;
+  }
+  .slider_navigate {
+      position: relative;
+      top: -58px;
+  }
+}
+@media (min-width: 992px) {
+  
+
+  .top_logo img {
+    width: auto;
+    height: 64px;
+  }
+  .top_info {
+    padding-left: 30px;
+  }
+  .navbar-nav li a {
+    padding: 0 20px;
+    font-size: 20px;
+  }
+  .otst {
+    margin-left: 49px;
+  }
+  .product {
+    padding-top: 62px;
+  }
+  .product.productBest {
+    padding-top: 16px;
+  }
+  .product {
+    min-height: 629px;
+  }
+  .product.productBest {
+    min-height: 598px;
+  }
+  .productFeatures {
+    padding: 0 35px;
+  }
+  .productFeatures li {
+    padding-left: 72px;
+  }
+  .prog_wrap:before {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    top: 133px;
+    left: 16px;
+    background: rgb(250, 250, 240);
+    background: linear-gradient(90deg, rgba(250, 250, 240, 0) 0%, rgba(247, 189, 41, 1) 16%, rgba(247, 189, 41, 1) 50%, rgba(247, 189, 41, 1) 85%, rgba(250, 250, 240, 0) 100%);
+  }
+  .prog_one:first-child:before, .prog_one:first-child:after, .prog_one:last-child:before, .prog_one:last-child:after {
+    display: none;
+  }
+  .prog_one:first-child {
+    display: inline-block !important;
+    background: #F7BD29;
+    box-shadow: 0px 16px 35px rgba(153, 153, 153, 0.3);
+    border-radius: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    height: 33px;
+    margin-top: 51px;
+  }
+  .prog_one:last-child {
+    display: inline-block !important;
+    color: #fff;
+    text-transform: uppercase;
+    background: #494B5A;
+    box-shadow: 0px 16px 35px rgba(153, 153, 153, 0.3);
+    border-radius: 10px;
+    height: 33px;
+  }
+  .prog_one {
+    display: inline-block;
+    margin: 0 27px;
+    margin-bottom: 53px;
+    text-align: center;
+  }
+  .prog_one:before {
+    content: '';
+    position: absolute;
+    bottom: -47px;
+    top: auto;
+    left: auto;
+    left: calc(50% - 1px);
+    height: 39px;
+    width: 2px;
+    background: rgb(247, 189, 41);
+    background: linear-gradient(0deg, rgba(247, 189, 41, 1) 0%, rgba(247, 189, 41, 1) 50%, rgba(250, 250, 240, 0) 100%);
+  }
+  .prog_one:after {
+    content: '';
+    position: absolute;
+    bottom: -49px;
+    top: auto;
+    left: calc(50% - 6px);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgb(247, 189, 41);
+  }
+  .prog_one:nth-child(2), .prog_one:nth-child(4), .prog_one:nth-child(6), .prog_one:nth-child(8) {
+    margin-bottom: 0;
+    margin-top: 33px;
+    vertical-align: top;
+  }
+  .prog_one:nth-child(2):before, .prog_one:nth-child(4):before, .prog_one:nth-child(6):before {
+    content: '';
+    position: absolute;
+    top: -47px;
+    bottom: auto;
+    left: calc(50% - 1px);
+    height: 39px;
+    width: 2px;
+    background: rgb(247, 189, 41);
+    background: linear-gradient(180deg, rgba(247, 189, 41, 1) 0%, rgba(247, 189, 41, 1) 50%, rgba(250, 250, 240, 0) 100%);
+  }
+  .prog_one:nth-child(2):after, .prog_one:nth-child(4):after, .prog_one:nth-child(6):after {
+    content: '';
+    position: absolute;
+    top: -49px;
+    bottom: auto;
+    left: calc(50% - 6px);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgb(247, 189, 41);
+  }
+  .dip_img {
+    margin: 0 96px;
+  }
+  img.ban_image {
+    position: absolute;
+    top: -39px;
+    right: 63px;
+    width: 297px;
+    display: block;
+  }
+  .prog_wrap {
+    padding-left: 0;
+    margin-top: 22px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .buy .product.productBest {
+    min-height: auto;
+  }
+  .buy .best {
+    left: -195px;
+    top: 165px;
+    width: 357px;
+  }
+  .buy .best:before {
+    width: 357px;
+  }
+  img.ban_image.trans {
+    transform: rotate(0deg);
+  }
+  .contact_wrap {
+    margin-top: 48px;
+  }
+  .contact_wrap .titleBlock h1 {
+    margin-bottom: 15px;
+  }
+  .contact_wrap .titleBlock {
+    margin-bottom: 80px;
+  }
+  .cont_one {
+    padding: 79px 60px;
+  }
+  .cont_one_info h4 {
+    font-size: 28px;
+  }
+  .cont_one_info p {
+    font-size: 18px;
+  }
+  .cont_one_img {
+    margin-bottom: 18px;
+  }
+  .cont_adr h4 {
+    font-size: 28px;
+  }
+  .cont_adr {
+    padding: 14px 281px;
+    margin-bottom: 153px;
+    margin-top: 72px;
+  }
+  .cont_sohp_wrap {
+    width: 84%;
+    margin: 0 auto;
+    text-align: left;
+    padding-left: 32px;
+  }
+  .cont_shop_img img {
+    width: 166px;
+  }
+  .cont_shop_img {
+    margin-bottom: 20px;
+    margin-top: 16px;
+    padding-left: 18px;
+  }
+  .cont_shop_info h4 {
+    font-size: 44px;
+    width: 422px;
+    margin-bottom: 42px;
+  }
+  .cont_sohp_wrap {
+    margin-bottom: 79px;
+    overflow: visible;
+    padding-bottom: 1px;
+  }
+  .cont_shop_fon {
+    left: auto;
+    right: -81px;
+    bottom: 0;
+    padding: 0;
+  }
+  .slider-nav {
+    text-align: left;
+    padding-bottom: 33px;
+    margin-bottom: 30px;
+    padding-top: calc(50% - 50px);
+  }
+  .next.slick-arrow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .prev.slick-arrow {
+    position: absolute;
+    bottom: 0;
+    left: 81px;
+  }
+  .slick-arrow {
+    cursor: pointer;
+  }
+  .pointer_pk {
+    text-align: center;
+    padding: 0px 0px 64px 0px;
+  }
+  .slider_navigate {
+      left: 50px;
+      text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  .product {
+    min-height: 670px;
+  }
+  .buy .product{
+    width: 587px;
+  }
+  .product.productBest {
+    min-height: 645px;
+  }
+  .videoWrap iframe {
+    max-width: 100%;
+    height: 275px;
+  }
+  .mentorInfo {
+    text-align: left;
+    padding-right: 213px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+  .mentorImg {
+    width: 285px;
+  }
+  .bann_top {
+    padding-top: 59px;
+    padding-bottom: 62px;
+    margin-bottom: 124px;
+    margin-top: 22px;
+  }
+  .bann_top_info p span {
+    font-size: 18px;
+    padding-left: 15px;
+  }
+  .bann_top_info h1 {
+    font-size: 52px;
+    margin-bottom: 16px;
+  }
+  .bann_top_info p {
+    width: 30%;
+  }
+  .bann_top .whiteButton {
+    margin-top: 23px;
+  }
+  img.ban_image {
+    top: -184px;
+    right: -13px;
+    width: 628px;
+  }
+  .what_get .headline {
+    margin-bottom: 43px;
+  }
+  .what_get_one {
+    margin-bottom: 19px;
+    padding: 0 20px;
+    width: 26%;
+  }
+  .what_get_one_img {
+    margin-bottom: 17px;
+  }
+  .what_get_one_imfo h4 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .what_get {
+    margin-bottom: 62px;
+  }
+  .curs_list .videoInfo p {
+    margin-bottom: 54px;
+    margin: 0;
+  }
+  .videoWrap.curs_list {
+    padding-bottom: 124px;
+  }
+  .prog_wrap {
+    padding-left: 74px;
+  }
+  .prog_one {
+    margin: 0 47px 0 27px;
+  }
+  .prog_one:first-child {
+    height: 35px;
+    margin-top: 51px;
+    margin-left: 27px;
+    margin-right: 27px;
+  }
+  .prog_one h4 {
+    font-size: 28px;
+    margin-bottom: 11px;
+        margin-top: 4px;
+  }
+  .prog_one:nth-child(2), .prog_one:nth-child(4), .prog_one:nth-child(6), .prog_one:nth-child(8) {
+    margin-bottom: 0;
+    margin-top: 74px;
+    vertical-align: top;
+    margin-right: 64px;
+  }
+  .prog_one:nth-child(2):before, .prog_one:nth-child(4):before, .prog_one:nth-child(6):before {
+    content: '';
+    position: absolute;
+    top: -35px;
+    bottom: auto;
+    left: calc(50% - 1px);
+    height: 29px;
+    width: 2px;
+    background: rgb(247, 189, 41);
+    background: linear-gradient(180deg, rgba(247, 189, 41, 1) 0%, rgba(247, 189, 41, 1) 50%, rgba(250, 250, 240, 0) 100%);
+  }
+  .prog_one:nth-child(2):after, .prog_one:nth-child(4):after, .prog_one:nth-child(6):after {
+    content: '';
+    position: absolute;
+    top: -42px;
+    bottom: auto;
+    left: calc(50% - 6px);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgb(247, 189, 41);
+  }
+  .prog_one:before {
+    content: '';
+    position: absolute;
+    bottom: -38px;
+    top: auto;
+    left: auto;
+    left: calc(50% - 1px);
+    height: 29px;
+    width: 2px;
+    background: rgb(247, 189, 41);
+    background: linear-gradient(0deg, rgba(247, 189, 41, 1) 0%, rgba(247, 189, 41, 1) 50%, rgba(250, 250, 240, 0) 100%);
+  }
+  .prog_one:after {
+    content: '';
+    position: absolute;
+    bottom: -44px;
+    top: auto;
+    left: calc(50% - 6px);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgb(247, 189, 41);
+  }
+  .prog {
+    padding-bottom: 89px;
+  }
+  .dip_img {
+    margin: -94px 96px;
+  }
+  .videoWrap.dip_list {
+    padding-bottom: 94px;
+  }
+  .dip_list .videoInfo p {
+    max-width: none;
+    margin-bottom: 20px;
+  }
+  .videoWrap.dip_list {
+    margin-bottom: 65px;
+  }
+  .buy .product {
+    padding: 24px 195px 16px 0;
+    position: relative;
+  }
+  .buy .productFeatures {
+    margin-top: -9px;
+  }
+  .abri_curs {
+    position: absolute;
+    top: 99px;
+    right: -70px;
+    transform: rotate(-90deg);
+    color: #f7bd29;
+    font-family: 'Futura PTBol', sans-serif;
+    font-size: 256px;
+    text-transform: uppercase;
+    line-height: 176px;
+  }
+  .buy_course {
+    text-align: left;
+    padding-left: 102px;
+  }
+  .buy_course_info h3 {
+    font-size: 44px;
+    margin-top: 26px;
+  }
+  .buy_course_info p {
+    padding-right: 62px;
+    margin-bottom: 32px;
+  }
+  .old_prise {
+    font-size: 28px;
+    margin-bottom: -8px;
+  }
+  .action_prise {
+    font-size: 52px;
+  }
+  .buy_course_foot {
+    margin-top: -10px;
+  }
+  .buy_course_foot .yellowButton {
+    width: 285px;
+  }
+  .buy {
+    padding-bottom: 12px;
+  }
+  .what_get_one.for_wg {
+    width: 25%;
+  }
+  .buy .product.productBest {
+    min-height: auto;
+  }
+  .buy .best {
+    left: -199px;
+    top: 171px;
+    width: 366px;
+  }
+  .buy .best:before {
+    width: 369px;
+    left: -1px;
+    top: 22px;
+  }
+  .productBest .abri_curs {
+    right: -46px;
+  }
+  img.ban_image.trans {
+    transform: rotate(0deg);
+    top: -45px;
+    right: 47px;
+    width: 526px;
+  }
+  .basic_pro .abri_curs {
+    top: 55px;
+    right: -67px;
+    font-size: 205px;
+  }
+  .cont_one {
+    padding: 79px 137px;
+  }
+  .cont_adr {
+    padding: 14px 419px;
+  }
+  .cont_shop_fon {
+    left: auto;
+    right: 82px;
+    bottom: 0;
+    padding: 0 18px;
+  }
+  .step_one {
+    text-align: left;
+    margin-bottom: 0;
+    padding-right: 83px;
+  }
+  .step_one_img {
+    margin-bottom: 0;
+  }
+  .pointer_pk {
+    text-align: center;
+    padding: 29px 0;
+  }
+  .step .titleBlock {
+    padding: 0 220px;
+    margin-bottom: 42px;
+  }
+  .step .titleBlock h4 {
+    font-size: 28px;
+  }
+  .step {
+    margin-top: 45px;
+    margin-bottom: 53px;
+  }
+  .step .titleBlock h1 {
+    margin-bottom: 22px;
+  }
+  .step_one_img img {
+    width: 100%;
+  }
+  .step_one {
+    padding-right: 0;
+    padding-left: 96px;
+  }
+  .order-md-2 .step_one {
+    padding-left: 0;
+  }
+  .step_info h4 {
+    font-size: 18px;
+  }
+  .step_info h3 {
+    font-size: 44px;
+  }
+  .step_one_old h3 {
+    font-size: 44px;
+  }
+  .step_one_old {
+    margin-top: 24px;
+  }
+  .step_one_old .yellowButton {
+    margin-top: 46px;
+  }
+  .pointer_pk.pointer_pk3 {
+    padding-right: 496px;
+    padding-top: 67px;
+  }
+  .productsWrap.master .titleBlock h3 {
+      font-size: 52px;
+      margin-bottom: 8px;
+  }
+  .productsWrap.master {
+      margin-bottom: 12px;
+  }
+  .videoWrap.master_one {
+      margin-bottom: 123px;
+      padding-bottom: 96px;
+  }
+  .videoWrap.curs_list .container:first-child {
+      margin-bottom: 97px;
+  }
+  .videoWrap.curs_list .container:nth-child(2) {
+      margin-bottom: 95px;
+  }
+  .videoWrap.curs_list .container:nth-child(2) .videoInfo{
+    padding-left: 0px;
+  }
+  .videoWrap.curs_list .container:nth-child(2) img{
+    margin-left: 85px;
+  }
+  .allDone {
+      margin-top: -20px;
+      margin-bottom: 72px;
+  }
+}
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1200px;
+  }
+  .navbar-brand img {
+    width: 176px;
+  }
+  .navbar-nav li a.shopButton {
+    margin-left: 14px;
+  }
+  .navbar-nav li a {
+    padding: 0 24px;
+    font-size: 20px;
+  }
+  .titleBlock h1 {
+    margin-bottom: 15px;
+    font-size: 52px;
+  }
+  header {
+    /*margin-bottom: 47px;*/
+  }
+  .titleBlock {
+    margin-bottom: 79px;
+  }
+  .productImg {
+    margin-bottom: 22px;
+  }
+  .productTitile p {
+    margin-bottom: 12px;
+    font-size: 18px;
+  }
+  .navbar {
+    padding: 21px .5rem .5rem 1rem;
+  }
+  .otst {
+    margin-left: 118px;
+  }
+  .productTitile h3 {
+    font-size: 36px;
+  }
+  .product {
+    padding-top: 32px;
+    margin-top: 37px;
+  }
+  .productFeatures img {
+    width: 24px;
+  }
+  .productFeatures span {
+    padding-left: 20px;
+    font-size: 18px;
+  }
+  .productFeatures {
+    margin-top: 16px;
+  }
+  .productFeatures li {
+    padding: 14px 11px;
+    padding-left: 62px;
+  }
+  .product.productBest .productImg {
+    margin-top: 28px;
+  }
+  .product.productBest {
+    min-height: 737px;
+  }
+  .product {
+    min-height: 725px;
+  }
+  .grayButton {
+    min-width: 83%;
+  }
+  .productsWrap {
+    margin-bottom: 89px;
+  }
+  .videoWrap {
+    padding: 95px 0px;
+  }
+  .videoWrap .col-12.col-md-6 {
+    justify-content: normal;
+  }
+  .videoInfo h3 {
+    font-size: 43px;
+    margin-bottom: 15px;
+  }
+  .videoInfo {
+    text-align: left;
+    padding-left: 99px;
+    margin-top: -4px;
+  }
+  .videoInfo p {
+    margin-bottom: 54px;
+    font-size: 18px;
+  }
+  .headline h3 {
+    font-size: 44px;
+    margin-top: 10px;
+  }
+  section.faqWrap {
+    padding-top: 124px;
+  }
+  section.faqWrap .headline {
+    margin-bottom: 43px;
+  }
+  .accordion {
+    width: 797px;
+    margin-bottom: 125px;
+  }
+  .accordion>.card>.card-header {
+    font-size: 28px;
+    padding-top: 14px;
+    padding-left: 33px;
+    padding-right: 12px;
+  }
+  .card-header i {
+    right: 15px;
+    top: calc(50% - 27px);
+  }
+  .card-body {
+    padding-left: 34px;
+    font-size: 18px;
+    padding-bottom: 13px;
+  }
+  .whyDoYouNeedWrap .headline h3 {
+    margin-bottom: 44px;
+  }
+  .benefitItem h4 {
+    margin-bottom: 11px;
+  }
+  .benefitItem p {
+    width: 270px;
+    margin: 0 auto;
+  }
+  .whyDoYouNeedWrap {
+    padding-bottom: 113px;
+  }
+  .mentorWrap {
+    padding: 93px 0;
+    margin-bottom: 127px;
+  }
+  .mentorWrap .headline {
+    margin-bottom: 44px;
+  }
+  .mentorImg {
+    width: 373px;
+    margin-left: 206px;
+  }
+  .mentorInfo {
+    padding-right: 213px;
+    padding-top: 86px;
+    padding-bottom: 79px;
+    padding-left: 97px;
+  }
+  .mentorInfo h4 {
+    font-size: 19px;
+    margin-bottom: 6px;
+  }
+  .mentorInfo p span {
+    font-size: 32px;
+    display: inline-block;
+    margin-bottom: 1px;
+  }
+  .mentorInfo ul {
+    margin-top: 51px;
+    margin-bottom: 0;
+  }
+  .testimonials .headline {
+    margin-bottom: 36px;
+  }
+  .testimonailsSlideInfo {
+    padding: 24px 18px 24px 27px;
+  }
+  .testimonailsSlideInfo p {
+    margin-bottom: 7px;
+  }
+  .testimonials {
+    padding-bottom: 70px;
+  }
+  .sertification {
+    padding: 91px 0;
+    padding-bottom: 72px;
+    margin-bottom: 127px;
+  }
+  .sertification .headline {
+    margin-bottom: 44px;
+  }
+  .sertificationImg img {
+    width: 100%;
+    padding-left: 87px;
+  }
+  .sertificationImg {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .sertificationInfo h4 {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  .sertificationInfo {
+    margin-top: 24px;
+    margin-left: -5px;
+  }
+  .sertificationPP {
+    padding-left: 0px;
+  }
+  .sertificationPP .sertificationImg img {
+    padding-left: 0;
+  }
+  .sertificationDiploma.sertificationPP .col-12.col-md-6 {
+    justify-content: left;
+  }
+  .sertificationPP .sertificationInfo {
+    margin-left: -96px;
+    margin-right: 86px;
+  }
+  .getStarted h3 {
+    text-align: left;
+    padding: 0px 0px;
+    font-size: 43px;
+  }
+  .productStartedWrap {
+    margin-top: 37px;
+  }
+  .best {
+    left: -69px;
+    width: 104px;
+    padding-top: 6px;
+    padding-bottom: 18px;
+    font-size: 18px;
+    font-family: Futura PT Demi;
+  }
+  .best:before {
+    content: '';
+    position: absolute;
+    width: 104px;
+    background: #fff;
+    border-radius: 8px;
+    left: 0;
+    top: 40px;
+    height: 15px;
+    z-index: 1;
+  }
+  .productStartImg {
+    margin-right: 0px;
+    margin-left: -16px;
+  }
+  .productStartInfo h4 {
+    margin-bottom: 7px;
+    font-size: 29px;
+  }
+  .getStarted .grayButton {
+    width: 95px;
+    margin-left: 13px;
+  }
+  .footer {
+    flex: 0 0 auto;
+    margin-top: 50px;
+    padding: 36px 0;
+  }
+  .footer_bottom p {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .paymentLogos {
+    margin-bottom: 0;
+    margin-top: -8px;
+  }
+  .fotterMenuCourses {
+    margin-bottom: 27px;
+    padding-left: 97px;
+  }
+  .footerContacts h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  .footerContacts ul {
+    margin-bottom: 0;
+    margin-top: 17px;
+  }
+  .productStart {
+    margin-left: 0px;
+    padding-left: 33px;
+    box-shadow: 0px 12px 64px rgba(73, 75, 90, 0.12);
+  }
+  .getStarted {
+    background: none;
+    padding-bottom: 50px;
+  }
+  .footerContacts {
+    padding-left: 95px;
+  }
+  .testimonialsSlider {
+    margin-left: -48px;
+    margin-right: -48px;
+  }
+  .slick-list {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+  .pdf_slide .slick-list {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .buy .product.productBest {
+    min-height: auto;
+    width: 587px;
+  }
+  .titleBlock p {
+      font-size: 18px;
+  }
+  .master_one .videoInfo{margin:70px 0px 0px 0px;padding-left: 90px;}
+  .what_get{margin-top: 20px;}
+  .what_get_wrap{align-items: unset;}
+  .what_get_one_imfo p {font-size: 18px;}
+  .what_get_one{margin-bottom: 12px;padding: 0 8px;}
+  .curs_list .videoInfo h3 {margin-bottom: 10px;margin-top: 0px;}
+  .curs_list .v1, .v3 {margin-left: -14px;}
+  .allDone {margin-top: -28px;}
+  .allDone p{margin-top: -8px;}
+}
+@media (min-width: 2560px) {}
+
+/***********************************************PROFILE *****************************************/
+
+.profile-card-section{display: flex;justify-content: center;align-items: end;padding-bottom: 191px;}
+.profile-card{margin-top: -40px; width: 40%;display: flex;flex-direction: column; justify-content: center;align-items: center;}
+.profile-card-face{width: 96px;height: 96px;}
+.profile-card-name{margin-top: 14px;font-family: 'Futura PT Book';font-style: normal;font-weight: normal;font-size: 28px;}
+.profile-card-email{font-family: 'PT Sans';font-style: normal;font-weight: normal;font-size: 18px;}
+.profile-card-login{font-family: 'PT Sans';font-style: normal;font-weight: normal;font-size: 20px;}
+.profile-card-section :nth-child(1) .profile-card-login a{color: #E7614F;}
+.profile-card-section :nth-child(2) .profile-card-login a{color: #F7BD29;}
+.pc1 .profile-card-name{padding-top:0px;}
+.pc1 .profile-card-email{padding-top:5px;}
+.pc1 .profile-card-login{padding-top:24px;}
+.pc2 .profile-card-name{padding-top:0px;}
+.pc2 .profile-card-email{padding-top:0px;}
+.pcl1 {padding-top:5px;}
+.pcl2 {padding-top:11px;}
+
+.myProfile h3 {font-size: 52px;margin-bottom: 12px;}
+
+@media (max-width:767px){
+   .cont_shop_fon{margin-bottom: -110px;} 
+}
+@media (max-width:568px){
+  .profile-card{width: 100%;}
+  .profile-card-section{flex-direction: column;padding-bottom: 60px;}
+  .pc1{margin-top: -30px;}
+  .pc1 .profile-card-email{padding-top: 0px;}
+  .pc1 .profile-card-login{padding-top: 0px;}
+  .pc2{margin-top: 52px;}
+  .myProfile h3 {font-size: 42px;}
+  .profile-card-name{font-size: 20px;}
+  .profile-card-email{font-size: 16px;}
+  .profile-card-login{font-size: 16px;}
+}
+@media (max-width:480px){
+  .cont_shop_fon{padding: 0px;}
+}
+@media(max-width:380px){
+ .myProfile{margin-bottom: 68px;margin-top: 35px;} 
+ .myProfile .titleBlock{width: 79%;margin: auto;}
+ .pc1 .profile-card-login {padding-top: 9px;}
+ .pc2 {margin-top: 33px;}
+ .contShopOfProfile .cont_sohp_wrap{padding-top: 36px;} 
+ .contShopOfProfile .cont_shop_fon{padding: 0px 62px 147px 62px;}
+ .contShopOfProfile{margin-bottom: -42px;}
+}
+
+@media (max-width:320px){
+  .myProfile h3 {font-size: 42px;}
+  .profile-card-section :nth-child(1) {margin-top: -10px;}
+  .profile-card-name{margin-top: 5px;}
+  .profile-card-login{margin-top: 10px;}
+  .pcl1 {margin-top:-3px;}
+  .pcl2 {margin-top:0px;}
+}
+
+/***********************************************CHECKOUT*****************************************/
+
+.checkout{margin:35px 0px -40px 0px;}
+.checkout h3 {font-size: 52px;}
+.paymentCards{display: flex;margin:15px 0px 40px 0px;width:290px;justify-content: space-between;}
+.paymentCards :nth-child(1){margin-top: 6px;}
+.paymentCards-item:hover{border: 1px solid gold;padding: 0px 8px 0px 8px;border-radius: 0px;
+  transition:.4s;transform:scale(1.2);cursor: pointer;}
+.checkout-buy {padding-bottom: 126px;}
+.checkout-buy .best {left: -207px;top: 178px;width: 390px;font-size: 18px;font-family: 'Futura PT';
+  font-style: normal;font-weight: 500;}
+.checkout-buy .best:before{width: 390px;left: 0px;top: 27px;}
+.checkout-buy .productBest .productImg{margin-top: 12px;}
+.checkout-buy .productBest{margin: -6px 0px 0px -15px;padding-bottom: 32px;}
+.checkout-buy .productFeatures{width: 480px;padding: 20px 0px 0px 33px;}
+.checkout-buy .abri_curs{transform: rotate(270deg) scale(1.1);right: -63px; top:114px;letter-spacing: 0.06em;
+max-height: 155px;overflow: hidden;}
+.checkout-buy .old_prise {margin-top: 45px;}
+.checkout-buy .yellowButton {margin-top: -6px;}
+
+@media (max-width: 1199px){
+  .paymentCards {margin: 15px auto 40px auto;width: 258px;}
+  .checkout-buy .best {top: 182px;width: 396px;}  
+  .checkout-buy .best:before{width: 394px;left: 0px;top: 24px;}
+}
+
+@media (max-width: 991px){
+  .checkout-buy .best{top: -15px;left: 0px;width: 100%;transform: rotate(0deg);}
+  .checkout-buy .best:before {width: 100%;}
+  .checkout-buy .productFeatures{width: 110%;padding: 0px 0px 0px 26px;font-size: 16px;}
+}
+
+@media (max-width: 767px){
+  .checkout-buy .productFeatures{width: 100%;margin-left: 11%;}
+  .checkout-buy .buy_course{margin-top: 65px;}
+}
+@media (max-width:567px){
+  .checkout h3 {font-size: 42px;}
+  .checkout-buy .productBest{margin: 0px;}
+  .checkout-buy .productFeatures{margin-left:3%;margin-top: 24px;width: 110%;} 
+  .checkout-buy .productFeatures li{padding-left: 0px;}
+  .paymentCards{width: 285px;}
+}
+@media(max-width:380px){
+  .checkout {margin-top: 48px;}
+  .checkout .titleBlock p {width: 79%;margin: auto;}
+  .checkout-buy .best{top: -24px;padding: 5px 0px 15px 0px;}
+  .checkout-buy .best:before{top:35px;}
+  .checkout-buy .productFeatures{margin-top: 22px;}
+  .checkout-buy .buy_course_info {margin-top: -1px;}
+  .checkout-buy .buy_course_prise {margin-top: -12px;}
+  .checkout-buy .yellowButton {margin-top: 9px;width: 82%;}
+  .checkout-buy {padding-bottom: 28px;}
+}
+
+/*********************************************** login/signin *****************************************/
+
+
+  .tabForLogin { width: 100%;height: 100%;text-align: center;display: flex;justify-content: center;align-items: center;}
+  .tabForLogin button {border: none;cursor: pointer;background-color: #fff;font-size: 20px;font-family: 'Futura PT Book';
+  font-weight: normal;padding: 0px 18px 0px 16px;}
+  .tabForLogin button.active{font-family: 'Futura PT Demi';font-size: 20px;}
+  .tabForLogin-content{width: 338px;height: 360px;margin: 0 auto;}
+  .tabcontent {display: none;}
+  .tabcontent input {width: 100%;border: none;font-size: 20px;
+    font-family: 'Futura PT Book';color: #494B5A;border-bottom: 1px solid #707070;}
+  .login  input:nth-of-type(1){margin-top: 37px;line-height: 50px;color: #000;}
+  .login  input:nth-of-type(2){margin-top: 23px;line-height: 45px;}
+  .login  input:nth-of-type(3){margin-top:47px;color: #fff;border:none;}
+  .login  a{display: block;padding-top: 23px;font-family: 'PT Sans Bold';font-style: normal;font-weight: bold;
+  font-size: 18px;color:#f7bd29;}
+  .signup input:nth-of-type(1){margin-top: 40px;line-height: 46px;}
+  .signup input:nth-of-type(2){margin-top: 20px;line-height: 49px;}
+  .signup input:nth-of-type(3){margin-top: 20px;line-height: 49px;}
+  .signup input:nth-of-type(4){margin-top: 46px;color: #fff;border:none;}
+  .tabForLogin-close{transform: rotate(45deg);position: absolute;float: right;font-size: 72px;top: -10px;right: 36px;
+    font-family: serif;cursor: pointer;}
+   /* #openTabb {margin: 0 auto;display: block;width: 30%;height: 30%;background-color: fuchsia;}  */
+   #openTabb:hover{color: #F7BD29;}
+  @media (max-width: 380px){
+    .tabForLogin{padding: 0px 15px 0px 15px;}
+    .tabForLogin-close{font-size: 42px;top: 0px;right: 20px;}
+  }
+
+/*********************************************** episode *****************************************/
+
+  .videoGallery{width: 100%;background-image: url('/img/Group87.jpg');padding-bottom: 33px;background-position: center;
+    background-size: cover;}
+    .navbar-nav li{color: white !important;}
+    .videoGallery-content{max-width: 540px;margin: 88px 0px 0px 0px;color: white;}
+    .videoGallery-content-mark{display: flex;margin: -17px 0px 0px -10px;margin-bottom: -1px;}
+    .videoGallery-content-mark-img{background-image: url('/img/episodeChip.png');width: 50px;height: 50px;margin: -7px 0px 0px 0px;}
+    .videoGallery-content-mark-txt{text-transform: uppercase;font-size: 18px;font-family: 'Futura PT Demi';}
+    .videoGallery-content-title{font-size: 44px;line-height: 62px;font-family: 'Futura PT';font-style: normal;
+      text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.24), 0px 0px 12px rgba(0, 0, 0, 0.24);font-weight: 500;margin-top:-10px;}
+    .videoGallery-content-text {font-family: 'PT Sans';font-style: normal;font-weight: bold;font-size: 20px;margin-top: 23px;}
+    .videoGallery-content-input{padding: 12px 0px 50px 0px;}
+    .episodeArrow {background-image: url('/img/episodeArrow.png');width: 30px;height: 30px;
+      background-position: center;background-size: cover;float: right;margin: 0px 206px 0px 0px;}
+    .grey{background-color: #f1f1f1;width: 38px;height: 38px;position: absolute;border-radius: 5px;}
+    .grey input {margin: 10px 0px 0px 10px;}
+    #episodeCode{width: 53%;height: 40px;border: 0px;border-radius: 5px;font-family: 'Futura PT';font-size: 24px;
+      font-weight: bold;color: #494B5A;padding-left: 45px;}
+    .videoGallery-content-buttons {display: flex;justify-content: space-between;width: 73%;}
+    .videoGallery-content-button img {border-radius: 0px;margin: -5px 3px 0px 0px;}
+    .videoGallery-content-button {width: 186px;height: 46px;border-radius: 5px;text-align: center;line-height: 48px;
+      color: #fff;font-size: 20px;font-family: 'Futura PT';}
+      .videoGallery-content-button:hover {color: #fff;text-decoration: none;}
+    .playB{background-color: #f7bd29;}
+    .resB{background-color: rgba(0,0,0,.32);}
+    .videoGallery-slider {width: 100%;/*width:103%*/display: flex;justify-content: space-between;margin-top: 102px;}
+    .videoGallery-slider a{color: #fff;display: block;font-size: 21px;font-family: 'Futura PT';text-transform: uppercase;
+      margin-top: -8px;}
+    .videoGallery-slider-item a img{ margin-top: -5px;}
+    .videoGallery-slider-item:nth-of-type(1) a img { transform: rotate(180deg);}
+    .videoGallery-slider-item:nth-of-type(2) a{text-align: right;}
+    .videoGallery-slider-item .episode-iframeBlock img{transform: skew(-7deg, 0deg);border:0px;border-radius: 4px;
+      width: 189px;height: 108px;}
+    .episodeDesc{display: flex;margin-top: 64px;}
+    .episodeDesc-text-title{font-family: 'Futura PT Book';font-size: 36px;line-height: 46px;}
+    .episodeDesc-text{width: 70%;font-family: 'PT Sans';font-size: 20px;padding-right: 20px;line-height: 28px;}
+    .episodeDesc-text p:nth-of-type(1) {padding-top: 16px;}
+    .episodeDesc-text p:nth-of-type(2) {padding-top: 10px;}
+    .episodeDesc-links{width: 34%;margin-right: -31px;height: auto;box-shadow: 0px 6px 15px rgba(153, 153, 153, 0.3);
+      border-radius: 10px;margin-left: 10px;}
+    .ep-content .videosViewed {bottom: 3px;left:-6px;}  
+    .ep-content .episode-iframeBlock img{transform: skew(-7deg, 0deg);border:0px;border-radius: 4px;}
+    .ep-content .episodeDesc-links a{color: #F7BD29;font-family: 'PT Sans';font-size: 20px;}
+    .episodeDesc-links-link{padding: 12px 0px 0px 67px;}
+    .episodeDesc-links-link a {text-decoration: underline;color: #F7BD29;}
+    .episodeDesc-links-title {padding: 29px 0px 0px 32px;}  
+    .episodeDesc-links-title a{color: #494B5A;font-family: 'Futura PT Book';font-size: 28px;}
+    .episodeDesc-links img {border-radius: 0px;margin: -6px 11px 0px 0px;}
+    .taskDate{background-color: #F0F1F2;font-family: 'Futura PT';font-size: 14px;
+    border-radius: 10px;text-align: center;padding: 0px 5px;margin: 0px 14px 0px -4px;text-decoration: none;}
+    .episodeDesc-links-download{text-align: center;padding-bottom: 0;padding-top: 5px;}
+    .episodeDesc-links-download a{color: #F7BD29;}
+    .episodeDesc hr{color: #F0F1F2;width: 80%;margin-top: 37px;}
+    .episodeList{margin-top: 47px;width: 107%;}
+    .episodeList-title{font-size: 36px;font-family: 'Futura PT';}
+    .episodeList-content{display: flex;justify-content: start;flex-wrap: wrap;position: relative;}
+    .episodeList-content .videosItem-number{width: 43px;z-index: 6;}
+    .episodeList-content .videosItem-text{width: 69px;font-size: 14px;line-height: 25px;margin: 0px 0px 0px -3px;z-index: 5;}
+      .ep-content .videosItem-number{transform: skew(-7deg, 0deg);border-top-right-radius:5px;border-bottom-left-radius: 5px;}
+      .ep-content .videosItem-text{transform: skew(-7deg, 0deg);border-top-right-radius:5px;}
+      .ep-content .episode-iframeBlock .skewImage {transform: skew(0deg, 0deg);}/*класс под кривые картинки*/
+      .ep-content .episode-iframeBlock:hover > img{position: absolute;zoom: 2;z-index: 4;left:-29px;top:-27px;
+      transform: scale(2) skew(-7deg, 0deg);border-radius: 2px;} 
+      .ep-content .episode-iframeBlock:hover .hiddenBlock .chp{transform: skew(0deg, 0deg);}
+      .ep-content .episode-iframeBlock:hover .hiddenBlock-play img{transform: skew(0deg, 0deg);}
+      .ep-content  .episode-iframeBlock:hover .hiddenBlock {display: block;}
+    .episodeList-content .episode-iframeBlock{margin-top: 8px;position: relative;width: 183px;height: 106px;
+      margin-right: 18px;margin-bottom: 8px;}
+    .contShopOfEpisode{margin: 70px 0px -50px 0px;}
+    .contShopOfEpisode .cont_shop_fon{top: -8px;right: -92px;}
+    .episodeOtst a img {border: 2px solid #fff;}/*надо сделать через JS*/
+    .episodeNavbar-nav li a{color: #fff;}
+    .episodeNavbar-nav li a.shopButton {border: 2px solid #fff;color: #fff;}/*надо сделать через JS*/
+    .episode-iframeBlock-mobile{display: none;}
+    .paging{display: none;}
+    .hiddenBlock{display: none;z-index: 5;position: absolute;color: #fff;font-family: 'Futura PT';line-height: 20px;
+      top: 14px;left: -130px;}
+    .hiddenBlock-title{font-size: 18px;text-transform: uppercase;display: flex;margin: 0px 0px 0px -9px;}
+    .hiddenBlock-title-title {margin-top: 10px;}
+    .hiddenBlock-text{font-size: 27px;font-family: 'Futura PT Demi';}
+    .hiddenBlock-play {width: 48px;height: 48px;background-color: #F7BD29;text-align: center;line-height: 48px;
+      border-radius: 5px;margin: -50px 0px 0px 280px;}
+    .hiddenBlock-play img{border-radius:0px;}
+
+    @media(max-width:992px){
+      .episodeDesc-links-link{padding: 12px 0px 0px 24px;}
+      .episodeDesc-links{height: 600px;}
+      .contShopOfEpisode .cont_shop_fon {top: -20px;right: -150px;transform:scale(.7);}
+    }
+    @media(max-width:767px){
+    .videoGallery-content-buttons{width: 77%;}
+    .episodeDesc{flex-direction: column;}
+    .episodeDesc-text {width: 100%;}
+    .episodeDesc-links {width: 100%;} 
+    .episodeDesc-links-download {padding-bottom: 38px;padding-top: 17px;}
+    .episodeDesc-links-link{padding: 12px 0px 0px 72px;}
+    .contShopOfEpisode .cont_shop_fon {position: relative; transform:scale(1);}
+    .episodeList-content .episode-iframeBlock{display: none;}
+    .episode-iframeBlock-mobile{width: 95%;border-radius: 10px;display: flex;
+      box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1), 0px 0px 23px rgba(0, 0, 0, 0.24);
+     position: relative;overflow: hidden;}
+    .episode-iframeBlock-mobile img{width: 131px;height: auto;border-radius:unset;}
+    .episode-iframeBlock-mobile-content{margin: 20px 0px 0px 16px;}
+    .episode-iframeBlock-mobile-title{font-size: 20px;font-family: 'Futura PT Book';}
+    .episode-iframeBlock-mobile-code{font-size: 16px;font-family: 'Futura PT';font-weight: bold;color: #F7BD29;}
+    .episode-iframeBlock-mobile .viewed{text-transform: uppercase;color: #fff;background: #DBDBDE;
+      transform: rotate(-90deg);width: 83px;height: 25px;text-align: center;position: absolute;top: 29px;
+      left: -30px;border-top: 10px;font-size: 12px;font-family: 'Futura PT';line-height: 25px;}
+      .paging{display: flex;margin:auto;width: 50%;justify-content: space-between;margin-top: 20px;}
+      .paging a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border:1px solid #DBDBDE;
+        border-radius: 5px;
+        color: #DBDBDE;
+        width: 37px;
+        height: 36px;
+        text-align: center;
+        }
+      .cont_sohp_wrap{padding-bottom: 100px;}
+    }
+
+    @media(max-width:567px){
+      .videoGallery-content-buttons{flex-direction: column;}
+      .resB{margin-top: 15px;}
+      .episodeArrow{display: none;}
+    }
+    @media(min-width:320px) and (max-width:567px){
+      .videoGallery-content{margin-top: 91px;}
+      .videoGallery-content-title{font-size: 35px;line-height: 48px;margin-bottom: 12px;}
+      .videoGallery-content-text{margin-top: 8px;font-size: 16px;margin-bottom: 28px;}
+      .videoGallery-content-input{padding-top: 4px;width: 316px;margin-bottom: 3px;}
+      #episodeCode{width: 95%;}
+      .videoGallery-content-buttons{margin-top: -25px;}
+      .videoGallery-slider {margin-top: 90px;/* justify-content: start; *//* align-items: start; */}
+      .episode-iframeBlock img{margin-top: -22px;transform: scale(.5);}
+      .episode-iframeBlock iframe{/* transform: scale(.5) skew(-7deg, 0deg); */width: 104px;height: 61px;/* position: relative; *//* left: 0; */}
+      .episodeDesc-text-title{font-size: 32px;font-weight: 500;margin-bottom: -7px;}
+      .videoGallery{padding-bottom: 0px;height: 100%;}
+      .episodeDesc{margin-top: 69px;}
+      .episodeDesc-text{padding-right: 0px;}
+      .episodeDesc-links-title{padding: 35px 0px 0px 34px;margin-bottom: 12px;}
+      .episodeDesc-links-title img {width: 18px;}
+      .episodeDesc-links {height: auto;margin: 0 auto;margin-top: 18px;width: 316px;}
+      .episodeDesc-links a{font-size: 16px;}
+      .episodeDesc-links-title a{font-size: 20px;}
+      .episodeDesc-links-link {padding: 10px 0px 0px 58px;}
+      .episodeList-title{font-size: 28px;}
+      .episodeList {margin-top: 72px;}
+      .episodeList-content {margin-top: 14px;}
+      .episode-iframeBlock-mobile{margin: 8px 0px;height: 92px;}
+      .paging{margin-top: 32px;width: 47%;}
+      .contShopOfEpisode .cont_shop_fon {position: relative;transform: scale(1.3);} 
+    }
+
+    @media (max-width: 420px){
+    /* .episode-iframeBlock-mobile-title {font-size: 22px;} */
+    .episode-iframeBlock-mobile-content {margin: 18px 0px 0px 4px;}
+    .videoGallery-content {margin-top: 0px;}
+    .videoGallery-slider {margin-top: 10px;} 
+}
+    @media (max-width: 330px){
+    .episode-iframeBlock-mobile-content {margin: 18px 0px 0px 4px;}
+    .episode-iframeBlock-mobile-title {font-size: 18px;}
+    }
+
+/*********************************************** VIDEOS *****************************************/
+
+.videoList-content .videosViewed {margin-top: 0px;left: -2px;height: 25px;overflow: hidden;}
+.videoList-content .videosViewed .videosItem-number {transform: skew(12deg, 0deg);border-bottom-right-radius: 5px;
+  font-family: 'Futura PT Demi';font-style: italic;}
+.videoList-content .videosViewed .videosItem-text {transform: skew(12deg, 0deg);border-bottom-right-radius: 5px;
+  font-family: 'Futura PT Demi';font-style: italic;}
+.videoList-content .videosViewed{margin-top: -1px;
+left: -1px;transform: skew(-7deg, 0deg);}
+.videos-step_one_old .yellowButton img{border-radius: 0px;margin: 0px 5px 0px 0px;}
+.videos-step_one_old .yellowButton {margin-top: 30px;width: 220px;margin-bottom: 9px;}
+.videoList-content{display: flex;flex-wrap: wrap;width: 83%;margin: auto;padding-bottom: 16px;}
+.videoList-content .episode-iframeBlock{width: 297px;height: 340px;position: relative;background-color:#fff;
+border-radius: 10px;transform: skew(-2deg, 0deg);box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1), 0px 0px 1px rgba(0, 0, 0, 0.24);}
+.videoList-content .episode-iframeBlock img{width: 100%;height: 160px;
+  border-radius: unset;border-top-right-radius: 8px;border-top-left-radius: 8px;}
+.videoList-content .episode-iframeBlock-mobile-chip {background-image: url('/img/videosChip.png');width: 24px;height: 24px;}
+.videoList-content .episode-iframeBlock-mobile-content{margin: 10px 42px 0px 16px;}
+.videoList-content .episode-iframeBlock-mobile-content hr{height: 2px;color: #494B5A;margin: auto;width: 50%;
+  margin-top: 12px;}
+.videoList-content .episode-iframeBlock-mobile-title{font-size: 28px;font-family: 'Futura PT Demi';font-weight: bold;
+  line-height: 34px;margin-top: 3px;width: 100px;}
+.videoList-content .episode-iframeBlock-mobile-code{font-size: 20px;font-family: 'Futura PT bol';font-weight: bold;
+  color: #F7BD29;margin-top: 12px;}
+.videoList-content .episodeList .episode-iframeBlock:hover iframe{position: absolute;zoom: 2;z-index: 1;left:-29px;top:-27px;}
+.videoList-content .hiddenBlock{top:180px;}
+.videoList-content .hiddenBlock .hiddenBlock-play{margin: -50px 0px 0px 490px;}
+.videos-step_one_old{margin-top: 36px;}
+.videos-step_one_old-title{font-size: 52px;font-family: 'Futura PT Book';}
+.videos-step_one_old-text{font-size: 28px;font-family: 'Futura PT Book';}
+.videosViewed{margin-top: -1px;display: flex;width: 112px;height: 25px;position: absolute;z-index: 3;border-radius: 5px;}
+.videosItem-number{color: #fff; background-color: #F7BD29;transform: skew(15deg, 0deg);
+  font-size: 14px;font-family: 'Futura PT';width: 43px;text-align: center;line-height: 25px;}
+.videosItem-text{text-transform: uppercase;text-align: center;background-color: #fff;font-size: 18px;
+  font-family: 'Futura PT';transform: skew(15deg, 0deg);}
+  .container{margin: 0 auto;}
+
+  @media(min-width:320px) and (max-width:767px){
+    .videos-step_one_old-title{font-size: 42px;}
+    .videos-step_one_old-text{font-size: 16px;}
+    .videoGallery-content-button {width: 207px;height: 51px;}
+    .videoList-content .episode-iframeBlock-mobile-title{font-size: 20px;}
+    .videoList-content .episode-iframeBlock-mobile-code{font-size: 16px;}
+    .episode-iframeBlock-mobile{margin:8px 0px;}
+  }
+  @media(max-width:420px){
+    .videoList-content .episode-iframeBlock-mobile-content {margin: 10px 0px 0px 5px;}
+  }
+  @media(max-width:360px){
+    .videoList-content .episode-iframeBlock-mobile-title {font-size: 16px;}
+  }
+
+  
+
+  /*********************************************** Home *****************************************/
+  
+  .homeArrow{width: 96px;height: 96px;background-color: #f8f8f8;color: #494B5A;border-radius: 50%;background-repeat: no-repeat;background-position: 34px center;margin-top: 33%;}
+  .homeLeft {background-image: url('/img/vectorBook.png');}
+  .homeRight {background-image: url('/img/vectorBook.png');transform: rotate(180deg);}
+  .homeBook{height: 700px;width: 494px;margin:0 auto;box-shadow: 0px 12px 64px rgba(73, 75, 90, 0.12), 0px 12px 64px rgba(73, 75, 90, 0.12);position: relative;}
+.homeBook-item{height: 700px;width: 494px;background-image: url('/img/img12.png');background-position: 0 0;
+background-size: cover;background-repeat: no-repeat;}
+.slick-list{padding:0px;}
+.multiple-items .slick-prev{background-image: url('/img/vectorBook.png');margin: -3px 0px 0px -195px;}
+.multiple-items .slick-next{background-image: url('/img/vectorBook.png');transform: rotate(180deg); margin: -52px -200px 0px 0px;}
+.multiple-items .slick-arrow{width: 96px;height: 96px;background-color: #f8f8f8;color: #494B5A;border-radius: 50%;background-repeat: no-repeat;
+  background-position: 34px center;}
+.aboutBook{display: flex;margin-top: 88px;}
+.aboutBook-content{width: 70%;}
+.aboutBook-content-title{font-size: 36px;font-family: 'Futura PT Book';font-style: normal;font-weight: normal;}
+.aboutBook-content-text{font-size: 20px;font-family: 'PT Sans';margin-top: 12px;}
+.aboutBook-buttons-padd{padding: 30px;}
+.aboutBook-buttons{width: 387px;height: 288px;background-color: #fff;box-shadow: 0px 12px 64px rgba(73, 75, 90, 0.12);
+  border-radius: 8px;}
+.aboutBook-buttons-title{font-size: 28px;font-family: 'Futura PT Book';margin-top: 3px;}
+.aboutBook-buttons img{border-radius: 0px; margin: -5px 6px 0px 0px;}
+.aboutBook-buttons .yellowButton{width: 100%;margin-top: 20px;}
+.aboutBook-buttons-text{text-align: center;margin-top: 10px;font-family: 'Futura PT Book';font-size: 18px;}
+.aboutBook-buttons .watchButton {background-color: #F8F8F8;color: #494B5A;margin-top: 12px;}
+
+@media(max-width:992px){
+  .multiple-items .slick-prev{margin: -3px 0px 0px -96px;}
+  .multiple-items .slick-next{margin: -52px -96px 0px 0px;}
+}
+
+@media(max-width:767px){
+  .homeBook{width: 265px;height: 375px;margin-top: 33px;} 
+  .homeBook-item{width: 265px;height: 375px;}
+  .multiple-items .slick-arrow{width: 24px;height: 24px;background-position: 9px center;}
+  .multiple-items .slick-prev {background-image: url('/img/smallVectorBook.png');transform: rotate(180deg);}
+  .multiple-items .slick-next {background-image: url('/img/smallVectorBook.png');transform: rotate(0deg);margin: 0px -96px 0px 0px;}
+  .coverItem{display: none;}
+  .aboutBook{flex-direction: column;}
+  .aboutBook-content{width: 100%;}
+  .aboutBook-buttons{width: 100%;margin: 40px 0px 10px 0px;}
+  .aboutBook-buttons-title{font-size: 20px;}
+  .aboutBook-content-title{font-size: 28px;}
+  .aboutBook-content-text{font-size: 16px;}
+}
+@media(max-width:567px){
+  .multiple-items .slick-prev {margin: -15px 0px 0px -50px;}
+  .multiple-items .slick-next {margin: -17px -50px 0px 0px;}
+  .aboutBook{margin-top: 63px;}
+  .aboutBook-content-text{margin-top: 20px;line-height: 23px;}
+}
+@media(max-width:420px){
+  .multiple-items .slick-prev {margin: -15px 0px 0px -12px;}
+  .multiple-items .slick-next {margin: -17px -20px 0px 0px;}
+}
+@media(max-width:350px){
+  .multiple-items .slick-prev {margin: -15px 0px 0px 0px;}
+  .multiple-items .slick-next {margin: -17px 0px 0px 0px;}
+}
+
+.main404{font-size: 60px;text-align: center;}

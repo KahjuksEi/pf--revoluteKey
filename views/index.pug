@@ -1,0 +1,311 @@
+extends layout
+block content
+  
+  .wrapper
+    .content
+      include header.pug
+      section.productsWrap
+        .container
+          .row
+            .col-12
+              .titleBlock
+                h1 Key Programming Course
+                p Make your first step in new job right now
+        .container
+          .row
+            .col-12.col-md-4
+              .product
+                .productImg
+                  img(src='img/productBasicLg.png' alt='')
+                .productTitile
+                  p LEARN YOURSELF
+                  h3 Basic Course
+                .productFeatures
+                  ul
+                    li
+                      img(src='img/icoFile.svg' alt='')
+                      span 20 texts
+                    li
+                      img(src='img/icoSystem.svg' alt='')
+                      span 6 schemes
+                .productFooter
+                  a.grayButton(href='#') Learn More
+            .col-12.col-md-4
+              .product.productBest
+                .bestOffer BEST OFFER
+                .productImg
+                  img(src='img/productStandartLg.png' alt='')
+                .productTitile
+                  p Recomended
+                  h3 Standart Course
+                .productFeatures
+                  ul
+                    li
+                      img(src='img/icoBook.svg' alt='')
+                      span PDF-tutorial
+                    li
+                      img(src='img/icoVideo.svg' alt='')
+                      span 20 video lessons
+                    li
+                      img(src='img/icoMedal.svg' alt='')
+                      span Certificate
+                    li
+                      img(src='img/icoGift.svg' alt='')
+                      span Gift
+                .productFooter
+                  a.grayButton(href='#') Learn More
+            .col-12.col-md-4
+              .product
+                .productImg
+                  img(src='img/productProLg.png' alt='')
+                .productTitile
+                  p FOR PROFFESIONALS
+                  h3 Premium Course
+                .productFeatures
+                  ul
+                    li
+                      img(src='img/icoBook.svg' alt='')
+                      span PDF-tutorial
+                    li
+                      img(src='img/icoVideo.svg' alt='')
+                      span 20 video lessons
+                    li
+                      img(src='img/icoMedal.svg' alt='')
+                      span Certificate
+                    li
+                      img(src='img/icoGift.svg' alt='')
+                      span Gift
+                    li
+                      img(src='img/icoUser.svg' alt='')
+                      span Masterclasses
+                .productFooter
+                  a.grayButton(href='#') Learn More
+      section.videoWrap
+        .container
+          .row
+            .col-12.col-md-6
+              .videoInfo
+                h3 Watch the video
+                p
+                  | On our service you can mprove your skills to knew more about Web and mobile design Invite expirenced
+                a.yellowButton(href='#') Get Started
+            .col-12.col-md-6
+              // <img src="img/videoPlacehoder.png" alt="">
+              iframe(width='560' height='315' src='https://www.youtube.com/embed/q0Jpbgnllpw' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+      section.faqWrap
+        .container
+          .row
+            .col-12
+              .headline
+                h3 Frequently Asked Questions
+        .container
+          .row
+            .col-12
+              #accordionExample.accordion
+                .card
+                  #heading-1.card-header.collapsed(data-toggle='collapse' data-target='#collapse-1' aria-expanded='true' aria-controls='collapse-1')
+                    | Frequently Asked Questions  
+                    i
+                      svg.bi.bi-plus(width='2em' height='2em' viewbox='0 0 20 20' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                        path(fill-rule='evenodd' d='M10 5.5a.5.5 0 01.5.5v4a.5.5 0 01-.5.5H6a.5.5 0 010-1h3.5V6a.5.5 0 01.5-.5z' clip-rule='evenodd')
+                        path(fill-rule='evenodd' d='M9.5 10a.5.5 0 01.5-.5h4a.5.5 0 010 1h-3.5V14a.5.5 0 01-1 0v-4z' clip-rule='evenodd')
+                  #collapse-1.collapse(aria-labelledby='heading-1' data-parent='#accordionExample')
+                    .card-body
+                      | Professional key master, 20 years of experience. Specializing on key programming. Professional key master, 20 years of experience. Professional key master, 20 years of experience. Specializing on key programming. Professional key master, 20 years of experience. Professional key master, 20 years of experience. Specializing on key programming. Professional key master, 20 years of experience.
+                .card
+                  #heading-2.card-header.collapsed(data-toggle='collapse' data-target='#collapse-2' aria-expanded='true' aria-controls='collapse-2')
+                    | Frequently Asked Questions  
+                    i
+                      svg.bi.bi-plus(width='2em' height='2em' viewbox='0 0 20 20' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                        path(fill-rule='evenodd' d='M10 5.5a.5.5 0 01.5.5v4a.5.5 0 01-.5.5H6a.5.5 0 010-1h3.5V6a.5.5 0 01.5-.5z' clip-rule='evenodd')
+                        path(fill-rule='evenodd' d='M9.5 10a.5.5 0 01.5-.5h4a.5.5 0 010 1h-3.5V14a.5.5 0 01-1 0v-4z' clip-rule='evenodd')
+                  #collapse-2.collapse(aria-labelledby='heading-2' data-parent='#accordionExample')
+                    .card-body
+                      | Professional key master, 20 years of experience. Specializing on key programming. Professional key master, 20 years of experience. Professional key master, 20 years of experience. Specializing on key programming. Professional key master, 20 years of experience. Professional key master, 20 years of experience. Specializing on key programming. Professional key master, 20 years of experience.
+                .card
+                  #heading-3.card-header.collapsed(data-toggle='collapse' data-target='#collapse-3' aria-expanded='true' aria-controls='collapse-3')
+                    | Frequently Asked Questions  
+                    i
+                      svg.bi.bi-plus(width='2em' height='2em' viewbox='0 0 20 20' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                        path(fill-rule='evenodd' d='M10 5.5a.5.5 0 01.5.5v4a.5.5 0 01-.5.5H6a.5.5 0 010-1h3.5V6a.5.5 0 01.5-.5z' clip-rule='evenodd')
+                        path(fill-rule='evenodd' d='M9.5 10a.5.5 0 01.5-.5h4a.5.5 0 010 1h-3.5V14a.5.5 0 01-1 0v-4z' clip-rule='evenodd')
+                  #collapse-3.collapse(aria-labelledby='heading-3' data-parent='#accordionExample')
+                    .card-body
+                      | Professional key master, 20 years of experience. Specializing on key programming. Professional key master, 20 years of experience. Professional key master, 20 years of experience. Specializing on key programming. Professional key master, 20 years of experience. Professional key master, 20 years of experience. Specializing on key programming. Professional key master, 20 years of experience.
+                .card
+                  #heading-4.card-header.collapsed(data-toggle='collapse' data-target='#collapse-4' aria-expanded='true' aria-controls='collapse-4')
+                    | Frequently Asked Questions 
+                    i
+                      svg.bi.bi-plus(width='2em' height='2em' viewbox='0 0 20 20' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                        path(fill-rule='evenodd' d='M10 5.5a.5.5 0 01.5.5v4a.5.5 0 01-.5.5H6a.5.5 0 010-1h3.5V6a.5.5 0 01.5-.5z' clip-rule='evenodd')
+                        path(fill-rule='evenodd' d='M9.5 10a.5.5 0 01.5-.5h4a.5.5 0 010 1h-3.5V14a.5.5 0 01-1 0v-4z' clip-rule='evenodd')
+                  #collapse-4.collapse(aria-labelledby='heading-4' data-parent='#accordionExample')
+                    .card-body
+                      | Professional key master, 20 years of experience. Specializing on key programming. Professional key master, 20 years of experience. Professional key master, 20 years of experience. Specializing on key programming. Professional key master, 20 years of experience. Professional key master, 20 years of experience. Specializing on key programming. Professional key master, 20 years of experience.
+                .card
+                  #heading-1.card-header.collapsed(data-toggle='collapse' data-target='#collapse-5' aria-expanded='true' aria-controls='collapse-5')
+                    | Frequently Asked Questions  
+                    i
+                      svg.bi.bi-plus(width='2em' height='2em' viewbox='0 0 20 20' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                        path(fill-rule='evenodd' d='M10 5.5a.5.5 0 01.5.5v4a.5.5 0 01-.5.5H6a.5.5 0 010-1h3.5V6a.5.5 0 01.5-.5z' clip-rule='evenodd')
+                        path(fill-rule='evenodd' d='M9.5 10a.5.5 0 01.5-.5h4a.5.5 0 010 1h-3.5V14a.5.5 0 01-1 0v-4z' clip-rule='evenodd')
+                  #collapse-5.collapse(aria-labelledby='heading-5' data-parent='#accordionExample')
+                    .card-body
+                      | Professional key master, 20 years of experience. Specializing on key programming. Professional key master, 20 years of experience. Professional key master, 20 years of experience. Specializing on key programming. Professional key master, 20 years of experience. Professional key master, 20 years of experience. Specializing on key programming. Professional key master, 20 years of experience.
+      section.whyDoYouNeedWrap
+        .container
+          .row
+            .col-12
+              .headline
+                h3 Why you need to become key master?
+        .container
+          .row
+            .col-12.col-md-4
+              .benefitItem
+                h4 1200
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            .col-12.col-md-4
+              .benefitItem
+                h4 &euro;2000
+                p Cras at tortor eget quam scelerisque hendrerit. Fusce risus metus
+            .col-12.col-md-4
+              .benefitItem
+                h4 1 month
+                p Vivamus vitae nisl mi. Phasellus ut sollicitudin nibh
+      section.mentorWrap
+        .container
+          .row
+            .col-12
+              .headline
+                h3 Mentor of the course
+        .container
+          .row
+            .col-12
+              .mentorInner
+                .row
+                  .col-12.col-md-6
+                    .mentorImg
+                      img(src='img/megaMan.png' alt='')
+                  .col-12.col-md-6
+                    .mentorInfo
+                      h4 KEY MASTER
+                      p
+                        span Edgar Ivancov
+                      p
+                        | Professional key master, 20 years of experience. Specializing on key programming. Professional key master, 20 years of experience.
+                      ul
+                        li
+                          a(href='#' target='_blank')
+                            img(src='img/socIn.svg' alt='')
+                        li
+                          a(href='#' target='_blank')
+                            img(src='img/socFb.svg' alt='')
+                        li
+                          a(href='#' target='_blank')
+                            img(src='img/socTw.svg' alt='')
+      section.testimonials
+        .container
+          .row
+            .col-12
+              .headline
+                h3 Testimonials
+        .container
+          .row
+            .col-12
+              .testimonialsSlider
+                .testimonialsSlide
+                  .testimonailsSlideImg
+                    img(src='img/testiFace1.png' alt='')
+                  .testimonailsSlideInfo
+                    p
+                      b Danny Brown
+                    p
+                      | Professional key master, 20 years Lorem ipsum solar de amet. Professional key master
+                .testimonialsSlide
+                  .testimonailsSlideImg
+                    img(src='img/testiFace2.png' alt='')
+                  .testimonailsSlideInfo
+                    p
+                      b Danny Brown
+                    p
+                      | Professional key master, 20 years Lorem ipsum solar de amet. Professional key master
+                .testimonialsSlide
+                  .testimonailsSlideImg
+                    img(src='img/testiFace3.png' alt='')
+                  .testimonailsSlideInfo
+                    p
+                      b Danny Brown
+                    p
+                      | Professional key master, 20 years Lorem ipsum solar de amet. Professional key master
+                .testimonialsSlide
+                  .testimonailsSlideImg
+                    img(src='img/testiFace4.png' alt='')
+                  .testimonailsSlideInfo
+                    p
+                      b Danny Brown
+                    p
+                      | Professional key master, 20 years Lorem ipsum solar de amet. Professional key master
+      section.sertification
+        .container
+          .row
+            .col-12
+              .headline
+                h3 Certification diploma
+        .container
+          .row
+            .col-12.col-md-6
+              .sertificationDiploma
+                .row
+                  .col-12.col-md-6
+                    .sertificationImg
+                      img(src='img/img5.png' alt='')
+                  .col-12.col-md-6
+                    .sertificationInfo
+                      h4 Standart Course
+                      p
+                        | Professional key master, 20 years of experience. Specializing on key programming. Professional key master, 20 years of experience.
+            .col-12.col-md-6
+              .sertificationDiploma.sertificationPP
+                .row
+                  .col-12.col-md-6
+                    .sertificationImg
+                      img(src='img/diploma2.png' alt='')
+                  .col-12.col-md-6
+                    .sertificationInfo
+                      h4 Pro Course
+                      p
+                        | Professional key master, 20 years of experience. Specializing on key programming. Professional key master, 20 years of experience.
+      section.getStarted
+        .container
+          .row
+            .col-12.col-md-7.col-lg-5
+              h3 Let&rsquo;s get started
+              .productStartedWrap
+                .productStart
+                  .productStartImg
+                    img(src='img/productBasicSm.png' alt='')
+                  .productStartInfo
+                    h4 Basic
+                    p Learn yourself
+                  .productStartButton
+                    a.grayButton(href='#') Buy
+                .productStart.productBest
+                  .best best
+                  .productStartImg
+                    img(src='img/productStandartSm.png' alt='')
+                  .productStartInfo
+                    h4 Standart
+                    p Popular
+                  .productStartButton
+                    a.grayButton(href='#') Buy
+                .productStart
+                  .productStartImg
+                    img(src='img/productProSm.png' alt='')
+                  .productStartInfo
+                    h4 Premium
+                    p Become proffesional
+                  .productStartButton
+                    a.grayButton(href='#') Buy
+            .col-12.col-md-5.d-none.d-md-block.col-lg-7
+              img(src='img/keyHand.png' alt='')
+  include footer.pug

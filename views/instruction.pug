@@ -1,0 +1,50 @@
+extends layout
+block content
+
+  .wrapper
+    .content
+      include header.pug
+      section.step
+        .container
+          .row
+            .col-12
+              .titleBlock
+                h1 Welcome to the revolute key&rsquo;s standart course!
+                h4 To watch our videos, please follow the 2-step instructions bellow:
+        .container
+          .row
+            .col-12.d-none.d-lg-block
+              .pointer_pk.pointer_pk1
+                img(src='img/ico19.svg' alt='')
+            .col-12.col-md-6.d-lg-flex.align-self-lg-center
+              .step_one
+                .step_info
+                  h4 STEP 1
+                  h3 Install the player
+                  p
+                    | We are using protected player fow our videos. You can install it by pressing this button bellow.
+                  a.yellowButton(href='#') Instal Player
+            .col-12.col-md-6
+              .step_one_img
+                img(src='img/img10.png' alt='')
+            .col-12.d-none.d-lg-block
+              .pointer_pk.pointer_pk2
+                img(src='img/ico20.svg' alt='')
+            .col-12.col-md-6.order-md-2.d-lg-flex.align-self-lg-center
+              .step_one
+                .step_info
+                  h4 STEP 2
+                  h3 Input a serial key
+                  p
+                    | We are using protected player fow our videos. You ccan install it by pressing this button bellow.
+            .col-12.col-md-6.order-md-1
+              .step_one_img
+                img(src='img/img10.png' alt='')
+            .col-12.order-md-3
+              .pointer_pk.pointer_pk3.d-none.d-lg-block
+                img(src='img/ico19.svg' alt='')
+              .step_one_old
+                h3 All done! Lets do some revolute!
+                p You can always watch this instruction in your profile
+                a.yellowButton(href='#') Go To The Episode 1
+  include footer.pug

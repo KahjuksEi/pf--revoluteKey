@@ -1,0 +1,20 @@
+extends layout
+block content
+
+  .tabForLogin
+    .tabForLogin-content
+      button#loginButton.tablinks(onclick="openAct(event, 'Log In')") Log In
+      button#signupButton.tablinks(onclick="openAct(event, 'Sign Up')") Sign Up
+      .login.tabcontent(id='Log In')
+        form(action='login.php' method='POST')
+          input(type='text' placeholder='E-mail' required='')
+          input(type='password' placeholder='Password' required='')
+          input.yellowButton(type='button' value='Log In')
+          br
+          a(href='#') Restore Password
+      .signup.tabcontent(id='Sign Up')
+        form(action='login.php' method='POST')
+          input(type='text' placeholder='E-mail')
+          input(type='password' placeholder='Password' required='')
+          input(type='password' placeholder='Repeat Password')
+          input.yellowButton(type='button' value='Sign Up')

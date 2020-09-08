@@ -1,0 +1,118 @@
+extends layout
+block content
+
+  .wrapper
+    .content
+      include header.pug
+      section.productsWrap.master
+        .container
+          .row
+            .col-12
+              .titleBlock
+                h3 Masterclass
+                p We&apos;re happy to answer any questions you may have
+      section.videoWrap.master_one
+        .container
+          .row
+            .col-12.col-md-6
+              .videoInfo
+                h3 Watch the video
+                p
+                  | On our service you can improve your skills
+                  | to knew more about Web and mobile
+                  | design Invite expirenced
+            .col-12.col-md-6
+              iframe#video1(width='488' height='274' src='https://www.youtube.com/embed/tgbNymZ7vqY')
+      section.what_get
+        .container
+          .row
+            .col-12
+              .headline
+                h3 What will you get?
+        .container
+          .row
+            .col-sm-12
+              .what_get_wrap
+                .what_get_one
+                  .what_get_one_img
+                    img(src='img/ico2.svg' alt='')
+                  .what_get_one_imfo
+                    h4 PDF-tutorial
+                    p
+                      | Lorem ipsum dolor sit amet,
+                      | consectetur adipiscing elit
+                .what_get_one
+                  .what_get_one_img
+                    img(src='img/ico3.svg' alt='')
+                  .what_get_one_imfo
+                    h4 20 video lessons
+                    p
+                      | Cras at tortor eget quam scelerisque
+                      | hendrerit
+                .what_get_one
+                  .what_get_one_img
+                    img(src='img/ico4.svg' alt='')
+                  .what_get_one_imfo
+                    h4 Certificate
+                    p
+                      | Vivamus vitae nisl mi. Phasellus
+                      | ut sollicitudin nibh
+                .what_get_one
+                  .what_get_one_img
+                    img(src='img/ico5.svg' alt='')
+                  .what_get_one_imfo
+                    h4 Gift
+                    p
+                      | Vivamus vitae nisl mi. Phasellus
+                      | ut sollicitudin nibh
+                .what_get_one
+                  .what_get_one_img
+                    img(src='img/ico12.svg' alt='')
+                  .what_get_one_imfo
+                    h4 Masterclasses
+                    p
+                      | Vivamus vitae nisl mi. Phasellus
+                      | ut sollicitudin nibh
+      section.videoWrap.curs_list
+        .container
+          .row
+            .col-12.col-md-6
+              .videoInfo.v1
+                h3 Slogans about course
+                p
+                  | On our service you can mprove your skills
+                  | to knew more about Web and mobile
+                  | design Invite expirenced
+            .col-12.col-md-6
+              img(src='img/masterclass1.png' alt='')
+        .container
+          .row
+            .col-12.col-md-6.order-md-2
+              .videoInfo.v2
+                h3 Slogans about course
+                p
+                  | On our service you can mprove your skills
+                  | to knew more about Web and mobile
+                  | design Invite expirenced
+            .col-12.col-md-6.order-md-1
+              img(src='img/masterclass2.png' alt='')
+        .container
+          .row
+            .col-12.col-md-6
+              .videoInfo.v3
+                h3 Slogans about course
+                p
+                  | On our service you can mprove your skills
+                  | to knew more about Web and mobile
+                  | design Invite expirenced
+            .col-12.col-md-6
+              img(src='img/masterclass3.png' alt='')
+      section.allDone
+        .container
+          .row
+            .col-12
+              .step_one_old
+                h3 All done! Lets do some revolute!
+                p You can always watch this instruction in your profile
+                a.yellowButton(href='#') Shedule Call
+  include footer.pug

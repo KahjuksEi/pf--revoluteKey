@@ -1,0 +1,57 @@
+extends layout
+block content
+
+  .wrapper
+    .content
+      include header.pug
+      section.productsWrap.checkout
+        .container
+          .row
+            .col-12
+              .titleBlock
+                h3 Check Out
+                p We&apos;re happy to answer any questions you may have
+      section.buy.checkout-buy
+        .container
+          .row
+            .col-12.col-md-6
+              .product.productBest
+                .best best offer
+                .productImg
+                  img(src='img/img6.png' alt='')
+                .productFeatures
+                  ul
+                    li
+                      img(src='img/icoBook.svg' alt='')
+                      span PDF-tutorial
+                    li
+                      img(src='img/icoMedal.svg' alt='')
+                      span Certificate
+                    li
+                      img(src='img/icoVideo.svg' alt='')
+                      span 20 video lessons
+                    li
+                      img(src='img/icoGift.svg' alt='')
+                      span Gift
+                .abri_curs.d-none.d-xl-block
+                  | st
+            .col-12.col-md-6
+              .buy_course
+                .buy_course_info
+                  h3 Payment method
+                .paymentCards
+                  .paymentCards-item
+                    img(src='img/mastercard.svg' alt='card')
+                  .paymentCards-item
+                    img(src='img/paypal.svg' alt='card')
+                  .paymentCards-item
+                    img(src='img/visa.svg' alt='card')
+                  .paymentCards-item
+                    img(src='img/western.svg' alt='card')
+                .buy_course_prise
+                  p.old_prise $109.99
+                  p.action_prise $89.99
+                .buy_course_foot
+                  a.yellowButton(href='#') Checkout
+    
+  include footer.pug

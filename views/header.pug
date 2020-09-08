@@ -1,0 +1,33 @@
+extends layout
+block content
+		header
+			.header_top
+				.container
+					.row
+						nav#menu.col-sm-12.navbar.navbar-default.navbar(role='navigation')
+							.navbar-header
+								a.navbar-brand(href='/')
+									img(src='img/logo.svg')
+								button.navbar-toggle.offcanvas-toggle(type='button' data-toggle='offcanvas' data-target='#js-bootstrap-offcanvas')
+									span.sr-only Toggle navigation
+									span
+										span.icon-bar
+										span.icon-bar
+										span.icon-bar
+								a.d-md-none.mob_log(href='login') Log In
+							#js-bootstrap-offcanvas.navbar-offcanvas.navbar-offcanvas-touch.navbar-collapse
+								ul#menu.nav.navbar-nav
+									li.d-xl-none.d-md-none.d-lg-none.mebu_name
+										img(src='img/logo.svg')
+									li.active
+										a(href='basic') Basic
+									li
+										a(href='standart') Standart
+									li
+										a(href='pro') Premium
+									li
+										a(href='contact') Contact
+									li.otst.d-none.d-md-inline-block
+										a(href='login') Log In
+									li
+										a.shopButton(href='#shop') Shop
