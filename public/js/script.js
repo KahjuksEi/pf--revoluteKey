@@ -166,39 +166,12 @@ $('.testimonialsSlider').slick({
     }(window.jQuery, window)
 }).call(this);
 
-// $(document).ready(function(){
-//   $("#menu").on("click","a:not(.color_red)", function (event) {
-//     event.preventDefault();
-//     var id  = $(this).attr('href'),
-//         top = $(id).offset().top;
-//     $('body,html').animate({scrollTop: top}, 900);
-//   });
-// });
-// $(function(){ 
-//   if ($(window).width() < 768){
-//     var navMain = $(".navbar-offcanvas"); avoid dependency on #id
-//     "a:not([data-toggle])" - to avoid issues caused
-//     when you have dropdown inside navbar
-//     navMain.on("click", "a:not([data-toggle])",  null, function () {
-//         navMain.collapse('toggle');
-//         $(".navbar-toggle").toggleClass('is-open');
-//         $("body").toggleClass('offcanvas-stop-scrolling');
-//     })
-//   }
-//  });
-
 /*login*/
-// var openTabb = document.querySelector('#openTabb');
 var tabForLogin = document.querySelector('.tabForLogin');
 var login = document.querySelector('.login');
 var loginButton = document.querySelector('#loginButton');
 var signupButton = document.querySelector('#signupButton');
 
-function addActive() {
-    login.style.display = "block";
-}
-// window.onload = tabForLogin.style.display = "none";
-window.onload = addActive();
 
 function openThisTab() {
     tabForLogin.style.display = "flex";
@@ -222,36 +195,4 @@ function openAct(evt, act) {
     }
     document.getElementById(act).style.display = "block";
     evt.currentTarget.className += " active";
-}
-/*episode*/
-var currentFile = window.location.href.split('/').pop();
-var logo = document.querySelector('.navbar-brand img');
-var episodeLis = document.querySelectorAll('.navbar-nav li a'),
-    i, len;
-var ava = document.querySelector('.episodeOtst a img');
-var shopButton = document.querySelector('.episodeNavbar-nav li a.shopButton');
-var episodeInput = document.querySelector('#episodeCode');
-if (currentFile == "episode.html") {
-    logo.src = "img/whiteLogo.png";
-    for (i = 0, len = episodeLis.length; i < len; i++) {
-        episodeLis[i].style.color = '#fff';
-    }
-    ava.style.border = "2px solid rgb(247, 189, 41) !important";
-    shopButton.style.border = "2px solid rgb(247, 189, 41) !important";
-}
-// для инпута кода
-for (var i in ['input', 'change', 'blur', 'keyup']) {
-    episodeCode.addEventListener('input', formatCardCode, false);
-}
-
-function formatCardCode() {
-    var episodeCode = this.value.replace(/[^\\w]/g, '').substring(0, 16);
-    episodeCode = episodeCode != '' ? episodeCode.match(/.{1,4}/g).join(' ') : '';
-    this.value = episodeCode;
-    episodeForm.number.value = this.value.split(" ").join("");
-}
-// для копирования инпута кода
-function copyText() {
-    episodeInput.select();
-    document.execCommand("copy");
 }
