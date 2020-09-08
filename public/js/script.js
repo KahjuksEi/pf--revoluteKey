@@ -1,47 +1,46 @@
 // slider
- $('.slider-for').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  fade: true,
-  
-  asNavFor: '.slider-nav'
+$('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+
+    asNavFor: '.slider-nav'
 });
 $('.slider-nav').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  infinite: false,
-  nextArrow: '<div class="prev"><img src="img/rig.svg" alt=""></div>',
-  prevArrow: '<div class="next"><img src="img/lef.svg" alt=""></div>',
-  asNavFor: '.slider-for',
-  dots: false,
-  arrows: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: false,
+    nextArrow: '<div class="prev"><img src="img/rig.svg" alt=""></div>',
+    prevArrow: '<div class="next"><img src="img/lef.svg" alt=""></div>',
+    asNavFor: '.slider-for',
+    dots: false,
+    arrows: true,
 });
 $('.testimonialsSlider').slick({
-  // centerMode: true,
-  centerPadding: '160px',
-  slidesToShow: 4,
-  prevArrow: $('.prev'),
-  nextArrow: $('.next'),
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
+    // centerMode: true,
+    centerPadding: '160px',
+    slidesToShow: 4,
+    prevArrow: $('.prev'),
+    nextArrow: $('.next'),
+    responsive: [{
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+        }
+    ]
 });
 
 // $('.lightbox').slickLightbox({
@@ -56,7 +55,7 @@ $('.testimonialsSlider').slick({
             return a.apply(b, arguments)
         }
     };
-    !function (b, c) {
+    ! function (b, c) {
         var d, e, f, g;
         return e = function () {
             function c(c) {
@@ -94,7 +93,9 @@ $('.testimonialsSlider').slick({
                     transition: "0s"
                 }
             }, d.prototype._getFade = function (a) {
-                return this.fade ? {opacity: a / this.element.outerWidth()} : {}
+                return this.fade ? {
+                    opacity: a / this.element.outerWidth()
+                } : {}
             }, d.prototype._clearCss = function () {
                 return {
                     "-webkit-transform": "",
@@ -188,63 +189,69 @@ $('.testimonialsSlider').slick({
 
 /*login*/
 // var openTabb = document.querySelector('#openTabb');
-			var tabForLogin = document.querySelector('.tabForLogin');
-			var login = document.querySelector('.login');
-			var loginButton = document.querySelector('#loginButton');
-			var signupButton = document.querySelector('#signupButton');
-			function addActive(){
-			login.style.display = "block";
-			}
-			// window.onload = tabForLogin.style.display = "none";
-			window.onload=addActive();
-			function openThisTab(){
-			tabForLogin.style.display = "flex";
-			openTabb.style.display = "none";
-			}
-			function closeThisTab(){
-			tabForLogin.style.display = "none";
-			openTabb.style.display = "block";
-			}
-			function openAct(evt, act) {
-			var i, tabcontent, tablinks;
-			tabcontent = document.getElementsByClassName("tabcontent");
-			for (i = 0; i < tabcontent.length; i++) {
-			tabcontent[i].style.display = "none";
-			}
-			tablinks = document.getElementsByClassName("tablinks");
-			for (i = 0; i < tablinks.length; i++) {
-			tablinks[i].className = tablinks[i].className.replace(" active", "");
-			}
-			document.getElementById(act).style.display = "block";
-			evt.currentTarget.className += " active";
-            }
-     /*episode*/       
-    var currentFile = window.location.href.split('/').pop();
-    var logo = document.querySelector('.navbar-brand img');
-    var episodeLis = document.querySelectorAll('.navbar-nav li a'), i, len;
-    var ava = document.querySelector('.episodeOtst a img');
-    var shopButton = document.querySelector('.episodeNavbar-nav li a.shopButton');
-    var episodeInput = document.querySelector('#episodeCode');
-    if(currentFile == "episode.html"){
+var tabForLogin = document.querySelector('.tabForLogin');
+var login = document.querySelector('.login');
+var loginButton = document.querySelector('#loginButton');
+var signupButton = document.querySelector('#signupButton');
+
+function addActive() {
+    login.style.display = "block";
+}
+// window.onload = tabForLogin.style.display = "none";
+window.onload = addActive();
+
+function openThisTab() {
+    tabForLogin.style.display = "flex";
+    openTabb.style.display = "none";
+}
+
+function closeThisTab() {
+    tabForLogin.style.display = "none";
+    openTabb.style.display = "block";
+}
+
+function openAct(evt, act) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(act).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+/*episode*/
+var currentFile = window.location.href.split('/').pop();
+var logo = document.querySelector('.navbar-brand img');
+var episodeLis = document.querySelectorAll('.navbar-nav li a'),
+    i, len;
+var ava = document.querySelector('.episodeOtst a img');
+var shopButton = document.querySelector('.episodeNavbar-nav li a.shopButton');
+var episodeInput = document.querySelector('#episodeCode');
+if (currentFile == "episode.html") {
     logo.src = "img/whiteLogo.png";
     for (i = 0, len = episodeLis.length; i < len; i++) {
-    episodeLis[i].style.color = '#fff';
+        episodeLis[i].style.color = '#fff';
     }
     ava.style.border = "2px solid rgb(247, 189, 41) !important";
     shopButton.style.border = "2px solid rgb(247, 189, 41) !important";
-    }
-    // для инпута кода
-    for (var i in ['input', 'change', 'blur', 'keyup']) {
+}
+// для инпута кода
+for (var i in ['input', 'change', 'blur', 'keyup']) {
     episodeCode.addEventListener('input', formatCardCode, false);
-    }
-    function formatCardCode() {
-    var episodeCode = this.value.replace(/[^\\w]/g, '').substring(0,16);
+}
+
+function formatCardCode() {
+    var episodeCode = this.value.replace(/[^\\w]/g, '').substring(0, 16);
     episodeCode = episodeCode != '' ? episodeCode.match(/.{1,4}/g).join(' ') : '';
     this.value = episodeCode;
-    episodeForm.number.value=this.value.split(" ").join("");
-    }
-    // для копирования инпута кода
-    function copyText() {
+    episodeForm.number.value = this.value.split(" ").join("");
+}
+// для копирования инпута кода
+function copyText() {
     episodeInput.select();
     document.execCommand("copy");
-    }
+}
